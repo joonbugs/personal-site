@@ -1,7 +1,7 @@
 ---
 title: test to research format
 date: '2023-01-10'
-authors: 'Yi-Hao Peng, Jason Wu, Jeffrey P. Bigham, Amy Pavel'
+writers:
 venue: 'UIST 2021'
 tags: ['research', 'A11y', 'featured']
 draft: false
