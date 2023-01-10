@@ -8,10 +8,10 @@ import siteMetadata from '@/data/siteMetadata'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 
-const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
+const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/research/${fileName}`
 const discussUrl = (slug) =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `${siteMetadata.siteUrl}/blog/${slug}`
+    `${siteMetadata.siteUrl}/research/${slug}`
   )}`
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
@@ -22,7 +22,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
   return (
     <SectionContainer>
       <BlogSEO
-        url={`${siteMetadata.siteUrl}/blog/${slug}`}
+        url={`${siteMetadata.siteUrl}/research/${slug}`}
         authorDetails={authorDetails}
         {...frontMatter}
       />
@@ -118,7 +118,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                           Previous Article
                         </h2>
                         <div className="text-primary-color dark:text-primary-color-dark hover:text-blue-600 dark:hover:text-yellow-300">
-                          <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
+                          <Link href={`/research/${prev.slug}`}>{prev.title}</Link>
                         </div>
                       </div>
                     )}
@@ -128,7 +128,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                           Next Article
                         </h2>
                         <div className="text-primary-color dark:text-primary-color-dark hover:text-blue-600 dark:hover:text-yellow-300">
-                          <Link href={`/blog/${next.slug}`}>{next.title}</Link>
+                          <Link href={`/research/${next.slug}`}>{next.title}</Link>
                         </div>
                       </div>
                     )}
@@ -137,10 +137,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               </div>
               <div className="pt-4 xl:pt-8">
                 <Link
-                  href="/blog"
+                  href="/research"
                   className="text-primary-color dark:text-primary-color-dark hover:text-blue-600 dark:hover:text-yellow-300"
                 >
-                  &larr; Back to the blog
+                  &larr; Back to Research
                 </Link>
               </div>
             </footer>

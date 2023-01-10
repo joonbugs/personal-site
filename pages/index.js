@@ -11,14 +11,14 @@ import SocialIcon from '@/components/social-icons'
 import NewsletterForm from '@/components/NewsletterForm'
 
 const MAX_FEATURED_DISPLAY = 4
-const MAX_BLOG_DISPLAY = 1
+const MAX_BLOG_DISPLAY = 2
 const MAX_DISPLAY = 2
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
   const research = await getAllFilesFrontMatter('research')
   const featured = research.filter((x) => x.tags.includes('featured'))
-  console.log(featured)
+
   return { props: { posts, featured } }
 }
 
@@ -31,9 +31,11 @@ export default function Home({ posts, featured }) {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
+        {/* top to end of command bar */}
         <div className="pt-6 pb-8 space-y-2 md:space-y-5">
+          {/* highlight text + image */}
           <div className="flex items-center justify-between">
-            <div className="">
+            <div className="headingtext">
               <h1 className="text-2xl font-bold tracking-tight leading-normal text-slate-900 dark:text-slate-100 sm:text-4xl sm:leading-normal md:text-5xl md:leading-normal">
                 Hi 👋 - I'm{' '}
                 <span className="text-primary-color dark:text-primary-color-dark">Joon</span>, a phd
@@ -49,6 +51,7 @@ export default function Home({ posts, featured }) {
                 </RoughNotation>
               </h1>
             </div>
+            {/* profile image */}
             <div>
               <Image
                 src={siteMetadata.image}
@@ -60,6 +63,7 @@ export default function Home({ posts, featured }) {
               />
             </div>
           </div>
+          {/* flavor text */}
           <p className="text-lg leading-7 text-slate-600 dark:text-slate-300">
             This is a home base for{' '}
             <RoughNotation
@@ -93,6 +97,7 @@ export default function Home({ posts, featured }) {
             in between.
           </p>
           <br />
+          {/* social icons */}
           <div className="flex mr-7 space-x-6 stroke center">
             <SocialIcon kind="github" href={siteMetadata.github} size="5" />
             <SocialIcon kind="gscholar" href={siteMetadata.gscholar} size="5" />
@@ -102,14 +107,19 @@ export default function Home({ posts, featured }) {
             {/* <SocialIcon kind="twitter" href={siteMetadata.twitter} size="5" /> */}
           </div>
           <br />
+          {/* action command bar */}
           <div className="flex justify-center w-full">
             <div className="justify-center mt-2">
               <ShortcutHome />
             </div>
           </div>
         </div>
-        <div className="pt-4 space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline pb-4">
-          <h2 className="flex-none text-xl font-semibold leading-8 tracking-tight text-slate-800 dark:text-slate-200">
+
+        {/* bottom content */}
+        {/* <div className="pt-4 space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline pb-4"> */}
+        {/* recent updates */}
+        <div className="recentUpdates pt-4 space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline pb-4">
+          <h2 className="flex-none text-2xl font-semibold leading-8 tracking-tight text-slate-800 dark:text-slate-200">
             <RoughNotation type="underline" show={true} color="#ADD8E6" animationDuration={1}>
               {' '}
               Recent Updates
@@ -134,88 +144,92 @@ export default function Home({ posts, featured }) {
             </li>
           </ul>
         </div>
-        {/* research stuff here */}
-        <div>
-          <div className="pt-4">
-            <h2 href="/blog" className="text-xl font-semibold text-slate-800 dark:text-slate-200">
-              <RoughNotation type="underline" show={true} color="#fff176" animationDuration={1}>
-                {' '}
-                Featured Research
-              </RoughNotation>
-            </h2>
-            <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-              {!featured.length && 'No posts found.'}
-              {featured.slice(0, MAX_FEATURED_DISPLAY).map((frontMatter) => {
-                const { slug, date, title, summary, tags } = frontMatter
-                return (
-                  <li key={slug} className="py-5">
-                    <article>
-                      <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
-                        <dl>
-                          <dt className="sr-only">Published on</dt>
-                          <dd className="text-base font-medium leading-5 text-slate-600 dark:text-slate-400">
-                            <time dateTime={date}>{formatDate(date)}</time>
-                          </dd>
-                        </dl>
-                        <div className="space-y-5 xl:col-span-3">
-                          <div className="space-y-6">
-                            <div>
-                              <h2 className="text-2xl font-bold leading-10 tracking-tight pb-1">
-                                <Link
-                                  href={`/research/${slug}`}
-                                  className="text-slate-800 dark:text-slate-200"
-                                >
-                                  {title}
-                                </Link>
-                              </h2>
-                              <div className="flex flex-wrap">
-                                {tags
-                                  .filter(
-                                    (tag) =>
-                                      !tag.localeCompare('featured') &&
-                                      !tag.localeCompare('research')
-                                  )
-                                  .map((tag) => (
-                                    <Tag key={tag} text={tag} />
-                                  ))}
-                              </div>
-                            </div>
-                            <div className="prose text-slate-600 max-w-none dark:text-slate-400">
-                              {summary}
+      </div>
+      {/* research stuff here */}
+      <div className="featuredResearch pt-4 space-y-2 pb-4">
+        <div className="pt-4">
+          <h2
+            href="/research"
+            className="text-2xl font-semibold text-slate-800 dark:text-slate-200"
+          >
+            <RoughNotation type="underline" show={true} color="#fff176" animationDuration={1}>
+              {' '}
+              Featured Research{'  '}
+            </RoughNotation>
+          </h2>
+          <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+            {!featured.length && 'No posts found.'}
+            {featured.slice(0, MAX_FEATURED_DISPLAY).map((frontMatter) => {
+              const { slug, date, title, summary, tags } = frontMatter
+              return (
+                <li key={slug} className="py-5">
+                  <article>
+                    <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+                      <dl>
+                        <dt className="sr-only">Published on</dt>
+                        <dd className="text-base font-medium leading-5 text-slate-600 dark:text-slate-400">
+                          <time dateTime={date}>{formatDate(date)}</time>
+                        </dd>
+                      </dl>
+                      <div className="space-y-5 xl:col-span-3">
+                        <div className="space-y-6">
+                          <div>
+                            <h3 className="text-xl font-bold leading-10 tracking-tight pb-1">
+                              <Link
+                                href={`/research/${slug}`}
+                                className="text-slate-800 dark:text-slate-200"
+                              >
+                                {title}
+                              </Link>
+                            </h3>
+                            <div className="flex flex-wrap">
+                              {tags
+                                .filter(
+                                  (tag) =>
+                                    !tag.localeCompare('featured') && !tag.localeCompare('research')
+                                )
+                                .map((tag) => (
+                                  <Tag key={tag} text={tag} />
+                                ))}
                             </div>
                           </div>
-                          <div className="text-base font-medium leading-6">
-                            <Link
-                              href={`/blog/${slug}`}
-                              className="text-primary-color hover:text-blue-600 dark:hover:text-yellow-300 dark:text-primary-color-dark"
-                              aria-label={`Read "${title}"`}
-                            >
-                              More research &rarr;
-                            </Link>
+                          <div className="prose text-slate-600 max-w-none dark:text-slate-400">
+                            {summary}
                           </div>
                         </div>
+                        <div className="text-base font-medium leading-6">
+                          <Link
+                            href={`/research/${slug}`}
+                            className="text-primary-color hover:text-blue-600 dark:hover:text-yellow-300 dark:text-primary-color-dark"
+                            aria-label={`Read "${title}"`}
+                          >
+                            &rarr;
+                          </Link>
+                        </div>
                       </div>
-                    </article>
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
-          {posts.length > MAX_FEATURED_DISPLAY && (
-            <div className="flex justify-end text-base font-medium leading-6 pb-5">
-              <Link
-                href="/research"
-                className="text-primary-color hover:text-blue-600 dark:hover:text-yellow-300 dark:text-primary-color-dark"
-                aria-label="more research posts"
-              >
-                Other Research &rarr;
-              </Link>
-            </div>
-          )}
+                    </div>
+                  </article>
+                </li>
+              )
+            })}
+          </ul>
         </div>
-        {/* blog stuff here */}
+      </div>
+      {featured.length > MAX_FEATURED_DISPLAY && (
+        <div className="flex justify-end text-base font-medium leading-6 pb-5">
+          <Link
+            href="/research"
+            className="text-primary-color hover:text-blue-600 dark:hover:text-yellow-300 dark:text-primary-color-dark"
+            aria-label="more research posts"
+          >
+            Other Research &rarr;
+          </Link>
+        </div>
+      )}
+      {/* blog stuff here */}
+      <div className="blogPosts pt-4 space-y-2 pb-4">
         <div className="pt-4">
-          <h2 href="/blog" className="text-xl font-semibold text-slate-800 dark:text-slate-200">
+          <h2 href="/blog" className="text-2xl font-semibold text-slate-800 dark:text-slate-200">
             <RoughNotation type="underline" show={true} color="#BEE5B0" animationDuration={1}>
               {' '}
               Blog Posts{'  '}
@@ -238,14 +252,14 @@ export default function Home({ posts, featured }) {
                       <div className="space-y-5 xl:col-span-3">
                         <div className="space-y-6">
                           <div>
-                            <h2 className="text-2xl font-bold leading-10 tracking-tight pb-1">
+                            <h3 className="text-xl font-bold leading-10 tracking-tight pb-1">
                               <Link
                                 href={`/blog/${slug}`}
                                 className="text-slate-800 dark:text-slate-200"
                               >
                                 {title}
                               </Link>
-                            </h2>
+                            </h3>
                             <div className="flex flex-wrap">
                               {tags
                                 .filter(
@@ -261,13 +275,13 @@ export default function Home({ posts, featured }) {
                             {summary}
                           </div>
                         </div>
-                        <div className="text-base font-medium leading-6">
+                        <div className="text-base font-medium leading-6 ">
                           <Link
                             href={`/blog/${slug}`}
                             className="text-primary-color hover:text-blue-600 dark:hover:text-yellow-300 dark:text-primary-color-dark"
                             aria-label={`Read "${title}"`}
                           >
-                            Read more &rarr;
+                            &rarr;
                           </Link>
                         </div>
                       </div>
@@ -279,6 +293,7 @@ export default function Home({ posts, featured }) {
           </ul>
         </div>
       </div>
+      {/* </div> */}
       {posts.length > MAX_BLOG_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
           <Link

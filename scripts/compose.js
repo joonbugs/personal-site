@@ -16,7 +16,7 @@ const getLayouts = () => {
   const layoutList = fs
     .readdirSync(layoutPath)
     .map((filename) => path.parse(filename).name)
-    .filter((file) => file.toLowerCase().includes('post'))
+    .filter((file) => file.toLowerCase().includes('layout'))
   return layoutList
 }
 
