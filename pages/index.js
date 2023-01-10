@@ -273,10 +273,10 @@ export default function Home({ posts, featured }) {
                             }}
                           />
                         </div>
-                        <div className="flex flex-wrap italic prose text-slate-600 max-w-none dark:text-slate-400 pb-6">
+                        <div className="flex flex-wrap font-lg italic prose text-slate-600 max-w-none dark:text-slate-400 pb-6">
                           {venue}
                         </div>
-                        <div className="flex flex-wrap font-lg prose text-slate-600 max-w-none dark:text-slate-400 pb-6">
+                        <div className="flex flex-wrap font-xl prose text-slate-600 max-w-none dark:text-slate-400 pb-6">
                           {/* paperlink, blogpost, demovideo, video, code, slides, talk */}
                           <div
                             dangerouslySetInnerHTML={{ __html: generateLinkString(linksArray) }}
