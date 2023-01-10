@@ -9,10 +9,12 @@ import Image from '@/components/Image'
 import ShortcutHome from '@/components/ShortcutHome'
 import SocialIcon from '@/components/social-icons'
 import NewsletterForm from '@/components/NewsletterForm'
+import React from 'react'
 
 const MAX_FEATURED_DISPLAY = 3
 const MAX_BLOG_DISPLAY = 2
 const MAX_DISPLAY = 2
+const AUTHOR_SHORTNAME = 'J.W. Jang'
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
@@ -22,6 +24,48 @@ export async function getStaticProps() {
   return { props: { posts, featured } }
 }
 
+// [paperlink, blogpost, demovideo, video, code, slides, talk]
+export function generateLinkString(linksArray) {
+  var retStringArr = []
+  var retString = ''
+  for (let i = 0; i < linksArray.length; i++) {
+    if (linksArray[i] != null) {
+      switch (i) {
+        case 0:
+          retString += '[<a href=&quot;' + linksArray[i] + '&quot;>paper</a>]'
+          // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'paper'))
+          break
+        case 1:
+          retString += '[<a href=&quot;' + linksArray[i] + '&quot;>blog</a>]'
+          // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'blog'))
+          break
+        case 2:
+          retString += '[<a href=&quot;' + linksArray[i] + '&quot;>demo video</a>]'
+          // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'demo video'))
+          break
+        case 3:
+          retString += '[<a href=&quot;' + linksArray[i] + '&quot;>video</a>]'
+          // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'video'))
+          break
+        case 4:
+          retString += '[<a href=&quot;' + linksArray[i] + '&quot;>code</a>]'
+          // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'code'))
+          break
+        case 5:
+          retString += '[<a href=&quot;' + linksArray[i] + '&quot;>slides</a>]'
+          // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'slides'))
+          break
+        case 6:
+          retString += '[<a href=&quot;' + linksArray[i] + '&quot;>talk</a>]'
+          // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'talk'))
+          break
+      }
+      retString += '   '
+    }
+  }
+
+  return retString
+}
 // helper function for featured tag
 
 // helper function for news
@@ -164,7 +208,7 @@ export default function Home({ posts, featured }) {
                 slug,
                 date,
                 title,
-                authors,
+                writers,
                 venue,
                 summary,
                 tags,
@@ -176,7 +220,9 @@ export default function Home({ posts, featured }) {
                 video,
                 code,
                 slides,
+                talk,
               } = frontMatter
+              const linksArray = [paperlink, blogpost, demovideo, video, code, slides, talk]
               return (
                 <li key={slug} className="py-5">
                   <article>
@@ -214,10 +260,27 @@ export default function Home({ posts, featured }) {
                             ))}
                         </div>
                         <div className="flex text-lg flex-wrap prose text-slate-600 max-w-none dark:text-slate-400 pb-2 pt-1">
-                          {authors}
+                          <div
+                            dangerouslySetInnerHTML={{
+                              __html: writers
+                                .split(',')
+                                .map((x) =>
+                                  x.includes(AUTHOR_SHORTNAME) || x.includes('JiWoong Jang')
+                                    ? '<b>' + x + '</b>'
+                                    : x
+                                )
+                                .reduce((acc, x) => (x === '' ? '' : acc + ', ' + x)),
+                            }}
+                          />
                         </div>
-                        <div className="flex flex-wrap prose text-slate-600 max-w-none dark:text-slate-400 pb-6">
+                        <div className="flex flex-wrap italic prose text-slate-600 max-w-none dark:text-slate-400 pb-6">
                           {venue}
+                        </div>
+                        <div className="flex flex-wrap font-lg prose text-slate-600 max-w-none dark:text-slate-400 pb-6">
+                          {/* paperlink, blogpost, demovideo, video, code, slides, talk */}
+                          <div
+                            dangerouslySetInnerHTML={{ __html: generateLinkString(linksArray) }}
+                          />
                         </div>
                         <div className="text-base font-medium leading-6">
                           <Link
