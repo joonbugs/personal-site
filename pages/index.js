@@ -163,10 +163,10 @@ export default function Home({ posts, featured }) {
         {/* <div className="pt-4 space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline pb-4"> */}
         {/* recent updates */}
         <div className="recentUpdates pt-4 space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline pb-4">
-          <h2 className="flex-none text-2xl font-semibold leading-8 tracking-tight text-slate-800 dark:text-slate-200">
-            <RoughNotation type="underline" show={true} color="#ADD8E6" animationDuration={1}>
-              {' '}
-              Recent Updates
+          <h2 className="flex-none text-2xl font-semibold leading-8 tracking-tight text-slate-800 dark:text-slate-100">
+            <RoughNotation type="box" show={true} color="#ADD8E6" animationDuration={1}>
+              {'  '}
+              Recent Updates{'  '}
             </RoughNotation>
           </h2>
           {/* <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div> */}
@@ -194,9 +194,9 @@ export default function Home({ posts, featured }) {
         <div className="pt-4">
           <h2
             href="/research"
-            className="text-2xl font-semibold text-slate-800 dark:text-slate-200"
+            className="text-2xl font-semibold text-slate-800 dark:text-slate-100"
           >
-            <RoughNotation type="underline" show={true} color="#fff176" animationDuration={1}>
+            <RoughNotation type="box" show={true} color="#fff176" animationDuration={1}>
               {' '}
               Featured Research{'  '}
             </RoughNotation>
@@ -314,10 +314,10 @@ export default function Home({ posts, featured }) {
       {/* blog stuff here */}
       <div className="blogPosts pt-4 space-y-2 pb-4">
         <div className="pt-4">
-          <h2 href="/blog" className="text-2xl font-semibold text-slate-800 dark:text-slate-200">
-            <RoughNotation type="underline" show={true} color="#BEE5B0" animationDuration={1}>
+          <h2 href="/blog" className="text-2xl font-semibold text-slate-800 dark:text-slate-100">
+            <RoughNotation type="box" show={true} color="#BEE5B0" animationDuration={1}>
               {' '}
-              Blog Posts{'  '}
+              Blog Posts{' '}
             </RoughNotation>
           </h2>
           <ul className="divide-y divide-gray-200 dark:divide-gray-700">
