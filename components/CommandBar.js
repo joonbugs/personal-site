@@ -61,6 +61,15 @@ export default function CommandBar(props) {
       icon: <i className="ri-user-line" style={iconStyle} />,
     },
     {
+      id: 'research',
+      name: 'Research',
+      shortcut: ['g', 'r'],
+      keywords: 'go-research',
+      section: 'Go To',
+      perform: () => router.push('/research'),
+      icon: <i className="ri-lightbulb-line" style={iconStyle} />,
+    },
+    {
       id: 'blog',
       name: 'Blog',
       shortcut: ['g', 'b'],
@@ -68,15 +77,6 @@ export default function CommandBar(props) {
       section: 'Go To',
       perform: () => router.push('/blog'),
       icon: <i className="ri-ball-pen-line" style={iconStyle} />,
-    },
-    {
-      id: 'research',
-      name: 'research',
-      shortcut: ['g', 'r'],
-      keywords: 'go-research',
-      section: 'Go To',
-      perform: () => router.push('/research'),
-      icon: <i className="ri-lightbulb-line" style={iconStyle} />,
     },
     // {
     //   id: 'reminder',
@@ -95,6 +95,15 @@ export default function CommandBar(props) {
       section: 'Follow',
       perform: () => window.open(siteMetadata.github, '_blank'),
       icon: <i className="ri-github-line" style={iconStyle} />,
+    },
+    {
+      id: 'gscholar',
+      name: 'Github',
+      shortcut: ['g'],
+      keywords: 'go-github',
+      section: 'Follow',
+      perform: () => window.open(siteMetadata.gscholar, '_blank'),
+      icon: <i className="ri-google-line" style={iconStyle} />,
     },
     // {
     //   id: 'linkedin',
