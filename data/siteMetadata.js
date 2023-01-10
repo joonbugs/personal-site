@@ -5,19 +5,19 @@ const siteMetadata = {
   description: 'My online repo for research and other stuff',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://einargudni.com,',
-  siteRepo: 'https://github.com/einargudnig/personal-blog-v3',
+  siteUrl: 'https://einargudni.com,', //TODO
+  siteRepo: 'https://github.com/joonbugs/personal-site',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/einar-avatar.jpg',
   profile: '/static/images/einar-avatar.jpg',
   gscholar: 'https://scholar.google.com/citations?user=JqGqynUAAAAJ&hl=en',
   socialBanner: '/static/images/twittercard.png',
-  email: 'einargudnig@gmail.com',
-  github: 'https://github.com/einargudnig',
-  twitter: 'https://twitter.com/einargudni',
-  facebook: 'https://facebook.com',
-  instagram: 'https://instagram.com/einargudni',
-  linkedin: 'https://www.linkedin.com/einargudni/',
+  email: 'jiwoongj@cs.cmu.edu',
+  github: 'https://github.com/joonbugs',
+  // twitter: 'https://twitter.com/YOUR_ID',
+  // facebook: 'https://facebook.com',
+  // instagram: 'https://instagram.com/YOUR_ID',
+  // linkedin: 'https://www.linkedin.com/YOUR_ID/',
   locale: 'en-US',
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics
