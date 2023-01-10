@@ -1,23 +1,21 @@
 const siteMetadata = {
-  title: 'Home | About Joon',
-  author: 'JiWoong (Joon) Jang',
-  headerTitle: 'my homepage',
-  description: 'A repository for research work and other things.',
+  title: 'Hi!👋',
+  author: 'Einar Guðni Guðjónsson',
+  headerTitle: 'My website',
+  description: 'My online place for thoughts',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://joonbugs.github.io,',
-  siteRepo: 'https://github.com/joonbugs/personal-site',
+  siteUrl: 'https://einargudni.com,',
+  siteRepo: 'https://github.com/einargudnig/personal-blog-v3',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/profile/cafe-shot-1.jpg',
-  profile: '/static/images/profile/cafe-shot-1.jpg',
+  image: '/static/images/einar-avatar.jpg',
   socialBanner: '/static/images/twittercard.png',
-  email: 'jiwoongj@cs.cmu.edu',
-  github: 'https://github.com/joonbugs',
-  gscholar: 'https://scholar.google.com/citations?user=JqGqynUAAAAJ&hl=en',
-  twitter: '',
-  facebook: '',
-  instagram: '',
-  linkedin: '',
+  email: 'einargudnig@gmail.com',
+  github: 'https://github.com/einargudnig',
+  twitter: 'https://twitter.com/einargudni',
+  facebook: 'https://facebook.com',
+  instagram: 'https://instagram.com/einargudni',
+  linkedin: 'https://www.linkedin.com/einargudni/',
   locale: 'en-US',
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics
@@ -72,6 +70,6 @@ const siteMetadata = {
       shortname: process.env.NEXT_PUBLIC_DISQUS_SHORTNAME,
     },
   },
-};
+}
 
-module.exports = siteMetadata;
+module.exports = siteMetadata
