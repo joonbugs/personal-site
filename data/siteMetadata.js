@@ -4,9 +4,9 @@ const siteMetadata = {
   headerTitle: 'My personal webpage',
   description: 'A webpage for research and some other things',
   language: 'en-us',
-  theme: 'system', // system, dark or light //mark
-  siteUrl: 'https://einargudni.com,',
-  siteRepo: 'https://github.com/einargudnig/personal-blog-v3',
+  theme: 'system', // system, dark or light
+  siteUrl: 'https://einargudni.com,', // TODO
+  siteRepo: 'https://github.com/joonbugs/personal-site', //mark
   siteLogo: '/static/images/logo.png',
   image: '/static/images/einar-avatar.jpg',
   socialBanner: '/static/images/twittercard.png',
