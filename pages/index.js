@@ -12,6 +12,7 @@ import NewsletterForm from '@/components/NewsletterForm'
 
 const MAX_FEATURED_DISPLAY = 4
 const MAX_BLOG_DISPLAY = 1
+const MAX_DISPLAY = 2
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
