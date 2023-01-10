@@ -10,7 +10,8 @@ import ShortcutHome from '@/components/ShortcutHome'
 import SocialIcon from '@/components/social-icons'
 import NewsletterForm from '@/components/NewsletterForm'
 
-const MAX_DISPLAY = 2
+const MAX_FEATURED_DISPLAY = 4
+const MAX_BLOG_DISPLAY = 1
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
@@ -116,6 +117,10 @@ export default function Home({ posts, featured }) {
           {/* <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div> */}
           <ul className="col-span-3 leading-8 tracking-tight text-m pt-2 pb-2 prose dark:prose-dark">
             <li>
+              <strong>2023 Jan</strong> - Overhauled this personal website for improved design and
+              accessibility 🌐
+            </li>
+            <li>
               <strong>2022 Nov</strong> - Joined the VariAbility Lab 🎉
             </li>
             <li>
@@ -131,10 +136,7 @@ export default function Home({ posts, featured }) {
         {/* research stuff here */}
         <div>
           <div className="pt-4">
-            <h2
-              href="/blog"
-              className="text-xl font-semibold text-slate-800 dark:text-slate-200 hover:text-primary-color"
-            >
+            <h2 href="/blog" className="text-xl font-semibold text-slate-800 dark:text-slate-200">
               <RoughNotation type="underline" show={true} color="#fff176" animationDuration={1}>
                 {' '}
                 Featured Research
@@ -142,7 +144,7 @@ export default function Home({ posts, featured }) {
             </h2>
             <ul className="divide-y divide-gray-200 dark:divide-gray-700">
               {!featured.length && 'No posts found.'}
-              {featured.slice(0, MAX_DISPLAY).map((frontMatter) => {
+              {featured.slice(0, MAX_FEATURED_DISPLAY).map((frontMatter) => {
                 const { slug, date, title, summary, tags } = frontMatter
                 return (
                   <li key={slug} className="py-5">
@@ -166,9 +168,15 @@ export default function Home({ posts, featured }) {
                                 </Link>
                               </h2>
                               <div className="flex flex-wrap">
-                                {tags.map((tag) => (
-                                  <Tag key={tag} text={tag} />
-                                ))}
+                                {tags
+                                  .filter(
+                                    (tag) =>
+                                      !tag.localeCompare('featured') &&
+                                      !tag.localeCompare('research')
+                                  )
+                                  .map((tag) => (
+                                    <Tag key={tag} text={tag} />
+                                  ))}
                               </div>
                             </div>
                             <div className="prose text-slate-600 max-w-none dark:text-slate-400">
@@ -181,7 +189,7 @@ export default function Home({ posts, featured }) {
                               className="text-primary-color hover:text-blue-600 dark:hover:text-yellow-300 dark:text-primary-color-dark"
                               aria-label={`Read "${title}"`}
                             >
-                              Read more &rarr;
+                              More research &rarr;
                             </Link>
                           </div>
                         </div>
@@ -192,7 +200,7 @@ export default function Home({ posts, featured }) {
               })}
             </ul>
           </div>
-          {posts.length > MAX_DISPLAY && (
+          {posts.length > MAX_FEATURED_DISPLAY && (
             <div className="flex justify-end text-base font-medium leading-6 pb-5">
               <Link
                 href="/research"
@@ -206,10 +214,7 @@ export default function Home({ posts, featured }) {
         </div>
         {/* blog stuff here */}
         <div className="pt-4">
-          <h2
-            href="/blog"
-            className="text-xl font-semibold text-slate-800 dark:text-slate-200 hover:text-primary-color"
-          >
+          <h2 href="/blog" className="text-xl font-semibold text-slate-800 dark:text-slate-200">
             <RoughNotation type="underline" show={true} color="#BEE5B0" animationDuration={1}>
               {' '}
               Blog Posts{'  '}
@@ -217,7 +222,7 @@ export default function Home({ posts, featured }) {
           </h2>
           <ul className="divide-y divide-gray-200 dark:divide-gray-700">
             {!posts.length && 'No posts found.'}
-            {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
+            {posts.slice(0, MAX_BLOG_DISPLAY).map((frontMatter) => {
               const { slug, date, title, summary, tags } = frontMatter
               return (
                 <li key={slug} className="py-5">
@@ -241,9 +246,14 @@ export default function Home({ posts, featured }) {
                               </Link>
                             </h2>
                             <div className="flex flex-wrap">
-                              {tags.map((tag) => (
-                                <Tag key={tag} text={tag} />
-                              ))}
+                              {tags
+                                .filter(
+                                  (tag) => tag.localeCompare('blog')
+                                  // && !tag.localeCompare('')
+                                )
+                                .map((tag) => (
+                                  <Tag key={tag} text={tag} />
+                                ))}
                             </div>
                           </div>
                           <div className="prose text-slate-600 max-w-none dark:text-slate-400">
@@ -268,7 +278,7 @@ export default function Home({ posts, featured }) {
           </ul>
         </div>
       </div>
-      {posts.length > MAX_DISPLAY && (
+      {posts.length > MAX_BLOG_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
           <Link
             href="/blog"
