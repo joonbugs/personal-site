@@ -10,7 +10,7 @@ import ShortcutHome from '@/components/ShortcutHome'
 import SocialIcon from '@/components/social-icons'
 import NewsletterForm from '@/components/NewsletterForm'
 
-const MAX_FEATURED_DISPLAY = 4
+const MAX_FEATURED_DISPLAY = 3
 const MAX_BLOG_DISPLAY = 2
 const MAX_DISPLAY = 2
 
@@ -128,19 +128,19 @@ export default function Home({ posts, featured }) {
           {/* <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div> */}
           <ul className="col-span-3 leading-8 tracking-tight text-m pt-2 pb-2 prose dark:prose-dark">
             <li>
-              <strong>2023 Jan</strong> - Overhauled this personal website for improved design and
-              accessibility 🌐
+              <strong>2023 Jan</strong> - 🌐 Overhauled this personal website for improved design
+              and accessibility
             </li>
             <li>
-              <strong>2022 Nov</strong> - Joined the VariAbility Lab 🎉
+              <strong>2022 Nov</strong> - 🎉 Joined the VariAbility Lab
             </li>
             <li>
-              <strong>2022 Oct</strong> - ASSETS 22 @ Athens(🇬🇷): shared a poster and participated
-              as an SV
+              <strong>2022 Oct</strong> - 🇬🇷 ASSETS 22 @ Athens: shared a poster and participated as
+              an SV
             </li>
             <li>
-              <strong>2022 Sept</strong> - Officially joined CMU HCII and the AXLE Lab as a Ph.D.
-              Student 🥳
+              <strong>2022 Sept</strong> - 🥳 Officially joined CMU HCII and the AXLE Lab as a Ph.D.
+              Student
             </li>
           </ul>
         </div>
@@ -160,42 +160,64 @@ export default function Home({ posts, featured }) {
           <ul className="divide-y divide-gray-200 dark:divide-gray-700">
             {!featured.length && 'No posts found.'}
             {featured.slice(0, MAX_FEATURED_DISPLAY).map((frontMatter) => {
-              const { slug, date, title, summary, tags } = frontMatter
+              const {
+                slug,
+                date,
+                title,
+                authors,
+                venue,
+                summary,
+                tags,
+                heroimage,
+                heroimagealt,
+                paperlink,
+                blogpost,
+                demovideo,
+                video,
+                code,
+                slides,
+              } = frontMatter
               return (
                 <li key={slug} className="py-5">
                   <article>
-                    <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
-                      <dl>
-                        <dt className="sr-only">Published on</dt>
-                        <dd className="text-base font-medium leading-5 text-slate-600 dark:text-slate-400">
-                          <time dateTime={date}>{formatDate(date)}</time>
-                        </dd>
-                      </dl>
-                      <div className="space-y-5 xl:col-span-3">
-                        <div className="space-y-6">
-                          <div>
-                            <h3 className="text-xl font-bold leading-10 tracking-tight pb-1">
-                              <Link
-                                href={`/research/${slug}`}
-                                className="text-slate-800 dark:text-slate-200"
-                              >
-                                {title}
-                              </Link>
-                            </h3>
-                            <div className="flex flex-wrap">
-                              {tags
-                                .filter(
-                                  (tag) =>
-                                    !tag.localeCompare('featured') && !tag.localeCompare('research')
-                                )
-                                .map((tag) => (
-                                  <Tag key={tag} text={tag} />
-                                ))}
-                            </div>
-                          </div>
-                          <div className="prose text-slate-600 max-w-none dark:text-slate-400">
-                            {summary}
-                          </div>
+                    <div className="items-left space-y-4 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline xl:-space-y-6">
+                      <div className="xl:col-span-1 self-center">
+                        <Link href={`/research/${slug}`} className="place-content-center">
+                          <Image
+                            src="/static/images/profile/conf-volunteering.jpg"
+                            alt={heroimagealt}
+                            height="180%"
+                            width="210%"
+                          ></Image>
+                        </Link>
+                      </div>
+                      <div className="mt-3 xl:col-span-3">
+                        <div className="">
+                          <h3 className="justTitle text-2xl font-bold tracking-tight pb-2 mt-6 leading-10">
+                            <Link
+                              href={`/research/${slug}`}
+                              className="text-slate-800 dark:text-slate-200"
+                            >
+                              {title}
+                            </Link>
+                          </h3>
+                        </div>
+                        <div className="flex flex-wrap pb-4">
+                          {tags
+                            .filter(
+                              (tag) =>
+                                tag.localeCompare('featured') && tag.localeCompare('research')
+                              // && !tag.localeCompare('')
+                            )
+                            .map((tag) => (
+                              <Tag key={tag} text={tag} />
+                            ))}
+                        </div>
+                        <div className="flex text-lg flex-wrap prose text-slate-600 max-w-none dark:text-slate-400 pb-2 pt-1">
+                          {authors}
+                        </div>
+                        <div className="flex flex-wrap prose text-slate-600 max-w-none dark:text-slate-400 pb-6">
+                          {venue}
                         </div>
                         <div className="text-base font-medium leading-6">
                           <Link
@@ -251,8 +273,8 @@ export default function Home({ posts, featured }) {
                       </dl>
                       <div className="space-y-5 xl:col-span-3">
                         <div className="space-y-6">
-                          <div>
-                            <h3 className="text-xl font-bold leading-10 tracking-tight pb-1">
+                          <div className="pb-2">
+                            <h3 className="text-2xl font-bold leading-10 tracking-tight pb-1">
                               <Link
                                 href={`/blog/${slug}`}
                                 className="text-slate-800 dark:text-slate-200"
@@ -271,7 +293,7 @@ export default function Home({ posts, featured }) {
                                 ))}
                             </div>
                           </div>
-                          <div className="prose text-slate-600 max-w-none dark:text-slate-400">
+                          <div className="flex flex-wrap prose text-slate-600 max-w-none dark:text-slate-400">
                             {summary}
                           </div>
                         </div>

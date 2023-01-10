@@ -21,6 +21,6 @@ hobbytext1: 'In my off time, I freelance as a video/music director and producer 
 questionstext: 'If you have any questions, please reach me using the various links around the page/site. (If you notice that this website is inaccessible, please do ping! TIA~)'
 ---
 
-I'm a first-year Ph.D. student at the [Human Computer Interaction Institute](https://hcii.cmu.edu), at Carnegie Mellon University's School of Computer Science.
+I'm a first-year Ph.D. student at the [Human Computer Interaction Institute](https://hcii.cmu.edu), at Carnegie Mellon University's School of Computer Science. I'm advised by [Patrick Carrington](patrickcarrington.com) and currently am a member of [AXLE Lab](https://axle-lab.com) and [VariAbility Lab](https://cmu-variability.github.io/).
 
-I conduct research at the intersection of accessibility ([A11y](https://www.a11yproject.com)), disability studies, computer vision applications, and [IxD](https://en.wikipedia.org/wiki/Interaction_design) for computer and robotic systems. I'm advised by [Patrick Carrington](patrickcarrington.com) and currently am a member of [AXLE Lab](https://axle-lab.com) and [VariAbility Lab](https://cmu-variability.github.io/).
+I conduct research at the intersection of accessibility ([A11y](https://www.a11yproject.com)), disability studies, computer vision applications, and [IxD](https://en.wikipedia.org/wiki/Interaction_design) for computer and robotic systems.
