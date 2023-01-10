@@ -6,11 +6,11 @@ const siteMetadata = {
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://einargudni.com,', // TODO
-  siteRepo: 'https://github.com/joonbugs/personal-site', //mark
+  siteRepo: 'https://github.com/joonbugs/personal-site',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/einar-avatar.jpg',
   socialBanner: '/static/images/twittercard.png',
-  email: 'einargudnig@gmail.com',
+  email: 'jiwoongj@cs.cmu.edu', // mark p
   github: 'https://github.com/einargudnig',
   twitter: 'https://twitter.com/einargudni',
   facebook: 'https://facebook.com',
