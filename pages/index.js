@@ -114,7 +114,7 @@ export default function Home({ posts }) {
           {/* <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div> */}
           <ul className="col-span-3 leading-8 tracking-tight text-m pt-2 pb-2 prose dark:prose-dark">
             <li>
-              <strong>2022 Nov</strong> - Joined the VariAbility Lab
+              <strong>2022 Nov</strong> - Joined the VariAbility Lab 🎉
             </li>
             <li>
               <strong>2022 Oct</strong> - ASSETS 22 @ Athens(🇬🇷): shared a poster and participated

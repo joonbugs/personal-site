@@ -70,12 +70,12 @@ export default function CommandBar(props) {
       icon: <i className="ri-ball-pen-line" style={iconStyle} />,
     },
     {
-      id: 'projects',
-      name: 'Projects',
-      shortcut: ['g', 'p'],
-      keywords: 'go-projects',
+      id: 'research',
+      name: 'research',
+      shortcut: ['g', 'r'],
+      keywords: 'go-research',
       section: 'Go To',
-      perform: () => router.push('/projects'),
+      perform: () => router.push('/research'),
       icon: <i className="ri-lightbulb-line" style={iconStyle} />,
     },
     // {

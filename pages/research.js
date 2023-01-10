@@ -13,7 +13,7 @@ export default function Research() {
             Research
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            A listing of research projects.
+            A listing of different research projects I'm involved with.
           </p>
         </div>
         <div className="container py-12">
