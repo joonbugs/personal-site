@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { useRouter } from 'next/router'
+import siteMetadata from '@/data/siteMetadata'
 import {
   KBarAnimator,
   KBarProvider,
@@ -29,7 +30,7 @@ export default function CommandBar(props) {
       shortcut: ['e'],
       keywords: 'send-email',
       section: 'General',
-      perform: () => window.open('mailto:einargudnig@gmail.com', '_blank'),
+      perform: () => window.open('mailto:'.concat(String(siteMetadata.email)), '_blank'),
       icon: <i className="ri-mail-line" style={iconStyle} />,
     },
     {
@@ -38,7 +39,7 @@ export default function CommandBar(props) {
       shortcut: ['s'],
       keywords: 'view-source',
       section: 'General',
-      perform: () => window.open('https://github.com/einargudnig/einargudni.com', '_blank'),
+      perform: () => window.open(siteMetadata.siteRepo, '_blank'),
       icon: <i className="ri-braces-line" style={iconStyle} />,
     },
     {
@@ -92,18 +93,18 @@ export default function CommandBar(props) {
       shortcut: ['g'],
       keywords: 'go-github',
       section: 'Follow',
-      perform: () => window.open('https://github.com/einargudnig', '_blank'),
+      perform: () => window.open(siteMetadata.github, '_blank'),
       icon: <i className="ri-github-line" style={iconStyle} />,
     },
-    {
-      id: 'linkedin',
-      name: 'LinkedIn',
-      shortcut: ['l'],
-      keywords: 'go-linkedin',
-      section: 'Follow',
-      perform: () => window.open('https://linkedin.com/in/einargudni', '_blank'),
-      icon: <i className="ri-linkedin-line" style={iconStyle} />,
-    },
+    // {
+    //   id: 'linkedin',
+    //   name: 'LinkedIn',
+    //   shortcut: ['l'],
+    //   keywords: 'go-linkedin',
+    //   section: 'Follow',
+    //   perform: () => window.open(siteMetadata.linkedin, '_blank'),
+    //   icon: <i className="ri-linkedin-line" style={iconStyle} />,
+    // },
   ]
 
   return (
