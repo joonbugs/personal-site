@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="flex flex-col items-center justify-between md:flex-row mt-10 mb-4">
-        <div className="flex mx-7 space-x-6 stroke mb-4">
+        <div className="flex mr-7 space-x-6 stroke mb-4">
           <SocialIcon kind="github" href={siteMetadata.github} size="5" />
           <SocialIcon kind="gscholar" href={siteMetadata.gscholar} size="5" />
           <SocialIcon kind="mail" href={'mailto:' + siteMetadata.email} size="5" />

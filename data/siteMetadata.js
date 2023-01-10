@@ -9,9 +9,11 @@ const siteMetadata = {
   siteRepo: 'https://github.com/joonbugs/personal-site',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/einar-avatar.jpg',
+  profile: '/static/images/einar-avatar.jpg', // mark p
   socialBanner: '/static/images/twittercard.png',
   email: 'jiwoongj@cs.cmu.edu',
-  github: 'https://github.com/joonbugs', // mark p
+  github: 'https://github.com/joonbugs',
+  gscholar: 'https://scholar.google.com/citations?user=JqGqynUAAAAJ&hl=en',
   twitter: 'https://twitter.com/einargudni',
   facebook: 'https://facebook.com',
   instagram: 'https://instagram.com/einargudni',
