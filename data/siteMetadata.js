@@ -9,7 +9,6 @@ const siteMetadata = {
   siteRepo: 'https://github.com/joonbugs/personal-site',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/einar-avatar.jpg',
-  profile: '/static/images/einar-avatar.jpg', // mark p
   socialBanner: '/static/images/twittercard.png',
   email: 'jiwoongj@cs.cmu.edu',
   github: 'https://github.com/joonbugs',
