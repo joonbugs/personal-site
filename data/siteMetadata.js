@@ -1,30 +1,27 @@
 const siteMetadata = {
   title: 'Home | About Joon',
-  author: 'Joon Jang',
-  headerTitle: 'My website',
-  description: 'testing 123',
+  author: 'JiWoong (Joon) Jang',
+  headerTitle: 'my homepage',
+  description: 'A repository for research work and other things.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://joonbugs.github.io,',
-  siteRepo: 'https://github.com/joonbugs', // update soon!
+  siteRepo: 'https://github.com/joonbugs/personal-site',
   siteLogo: '/static/images/logo.png',
-  profile: '/static/images/profile/cafe-shot-1.jpg',
   image: '/static/images/profile/cafe-shot-1.jpg',
   socialBanner: '/static/images/twittercard.png',
   email: 'jiwoongj@cs.cmu.edu',
   github: 'https://github.com/joonbugs',
-  gscholar: 'https://scholar.google.com/citations?user=JqGqynUAAAAJ&hl=en',
-  // twitter: 'https://twitter.com/einargudni',
-  // facebook: 'https://facebook.com',
-  // instagram: 'https://instagram.com/einargudni',
+  twitter: '',
+  facebook: '',
+  instagram: '',
   linkedin: '',
-  //fill in affiliations
   locale: 'en-US',
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics
     plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
     simpleAnalytics: false, // true or false
-    googleAnalyticsId: 'GA-ID', // e.g. UA-000000-2 or G-XXXXXXX
+    googleAnalyticsId: 'G-95HPC8T3GB', // e.g. UA-000000-2 or G-XXXXXXX
   },
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo
