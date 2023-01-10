@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Home - Joon Jang',
   author: 'JiWoong (Joon) Jang',
   headerTitle: 'My personal webpage',
-  description: 'A webpage for research and some other things',
+  description: 'My online repo for research and other stuff',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://einargudni.com,',
