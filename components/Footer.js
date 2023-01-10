@@ -2,7 +2,7 @@ import Link from './Link'
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
 
-import { currentDayName } from '@/lib/utils/dateUtils'
+import { currentDayName, currentYear } from '@/lib/utils/dateUtils'
 
 export default function Footer() {
   return (
@@ -17,7 +17,7 @@ export default function Footer() {
           {/* <SocialIcon kind="twitter" href={siteMetadata.twitter} size="5" /> */}
         </div>
         <div className="flex mb-3 space-x-2 text-sm text-gray-500 dark:text-gray-400">
-          © {2023} {siteMetadata.author} | Have a good {currentDayName()}!
+          © {currentYear()} {siteMetadata.author} | Have a great {currentDayName()}!
         </div>
       </div>
     </footer>
