@@ -8,7 +8,7 @@ const siteMetadata = {
   siteUrl: 'https://einargudni.com,', // TODO
   siteRepo: 'https://github.com/joonbugs/personal-site',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/einar-avatar.jpg',
+  image: '/static/images/profile/cafe-shot-1.jpg',
   socialBanner: '/static/images/twittercard.png',
   email: 'jiwoongj@cs.cmu.edu',
   github: 'https://github.com/joonbugs', // mark p
