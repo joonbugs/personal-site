@@ -47,7 +47,7 @@ export default function Home({ posts }) {
             </div>
             <div>
               <Image
-                src={siteMetadata.profile}
+                src={siteMetadata.image}
                 alt="profile photo of Joon"
                 width="750%"
                 height="500%"
