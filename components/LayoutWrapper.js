@@ -20,13 +20,13 @@ const LayoutWrapper = ({ children }) => {
             <Link href="/" aria-label="Einar Gudni's website">
               <div className="flex items-center justify-between text-xl font-semibold text-primary-color dark:text-primary-color-dark">
                 {`~${router.asPath}`}{' '}
-                <Typewriter
+                {/* <Typewriter
                   options={{
                     strings: [],
                     autoStart: true,
                     loop: true,
                   }}
-                />
+                /> */}
               </div>
             </Link>
           </div>
@@ -47,7 +47,7 @@ const LayoutWrapper = ({ children }) => {
           </div>
         </header>
         <main className="relative mb-auto">{children}</main>
-        <NowPlaying />
+        {/* <NowPlaying /> */}
         <Footer />
       </div>
     </SectionContainer>

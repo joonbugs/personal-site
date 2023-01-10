@@ -117,8 +117,8 @@ export default function Home({ posts }) {
               <strong>2022 Nov</strong> - Joined the VariAbility Lab
             </li>
             <li>
-              <strong>2022 Oct</strong> - ASSETS '22 @ Athens(🇬🇷): shared a poster and participated
-              in-person as an SV
+              <strong>2022 Oct</strong> - ASSETS 22 @ Athens(🇬🇷): shared a poster and participated
+              as an SV
             </li>
             <li>
               <strong>2022 Sept</strong> - Officially joined CMU HCII and the AXLE Lab as a Ph.D.
