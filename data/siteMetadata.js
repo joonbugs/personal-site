@@ -14,10 +14,10 @@ const siteMetadata = {
   socialBanner: '/static/images/twittercard.png',
   email: 'jiwoongj@cs.cmu.edu',
   github: 'https://github.com/joonbugs',
-  // twitter: 'https://twitter.com/YOUR_ID',
-  // facebook: 'https://facebook.com',
-  // instagram: 'https://instagram.com/YOUR_ID',
-  // linkedin: 'https://www.linkedin.com/YOUR_ID/',
+  twitter: 'https://twitter.com/YOUR_ID',
+  facebook: 'https://facebook.com',
+  instagram: 'https://instagram.com/YOUR_ID',
+  linkedin: 'https://www.linkedin.com/YOUR_ID/',
   locale: 'en-US',
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics
