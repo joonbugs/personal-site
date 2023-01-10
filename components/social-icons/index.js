@@ -5,6 +5,7 @@ import Instagram from './instagram.svg'
 import Linkedin from './linkedin.svg'
 import Twitter from './twitter.svg'
 import External from './external.svg'
+import GScholar from './gscholar.svg'
 
 // Icons taken from: https://simpleicons.org/
 
@@ -16,6 +17,7 @@ const components = {
   linkedin: Linkedin,
   twitter: Twitter,
   external: External,
+  gscholar: GScholar,
 }
 
 const SocialIcon = ({ kind, href, size = 8 }) => {
