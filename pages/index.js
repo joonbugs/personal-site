@@ -93,9 +93,9 @@ export default function Home({ posts }) {
             <SocialIcon kind="github" href={siteMetadata.github} size="5" />
             <SocialIcon kind="gscholar" href={siteMetadata.gscholar} size="5" />
             <SocialIcon kind="mail" href={'mailto:' + siteMetadata.email} size="5" />
-            <SocialIcon kind="instagram" href={siteMetadata.instagram} size="5" />
-            <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="5" />
-            <SocialIcon kind="twitter" href={siteMetadata.twitter} size="5" />
+            {/* <SocialIcon kind="instagram" href={siteMetadata.instagram} size="5" /> */}
+            {/* <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="5" /> */}
+            {/* <SocialIcon kind="twitter" href={siteMetadata.twitter} size="5" /> */}
           </div>
           <br />
           <div className="flex justify-center w-full">
@@ -117,7 +117,7 @@ export default function Home({ posts }) {
               <strong>2022 Nov</strong> - Joined the VariAbility Lab
             </li>
             <li>
-              <strong>2022 Oct</strong> - ASSETS '22 @ Athens: shared a poster and participated
+              <strong>2022 Oct</strong> - ASSETS '22 @ Athens(🇬🇷): shared a poster and participated
               in-person as an SV
             </li>
             <li>
