@@ -9,6 +9,8 @@ const siteMetadata = {
   siteRepo: 'https://github.com/einargudnig/personal-blog-v3',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/einar-avatar.jpg',
+  profile: '/static/images/einar-avatar.jpg',
+  gscholar: 'https://scholar.google.com/citations?user=JqGqynUAAAAJ&hl=en',
   socialBanner: '/static/images/twittercard.png',
   email: 'einargudnig@gmail.com',
   github: 'https://github.com/einargudnig',
