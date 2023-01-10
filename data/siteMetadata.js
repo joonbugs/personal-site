@@ -11,9 +11,8 @@ const siteMetadata = {
   image: '/static/images/einar-avatar.jpg',
   socialBanner: '/static/images/twittercard.png',
   email: 'jiwoongj@cs.cmu.edu',
-  gscholar: 'https://scholar.google.com/citations?user=JqGqynUAAAAJ&hl=en',
-  github: 'https://github.com/joonbugs',
-  twitter: 'https://twitter.com/your_ID_here', // mark p
+  github: 'https://github.com/joonbugs', // mark p
+  twitter: 'https://twitter.com/einargudni',
   facebook: 'https://facebook.com',
   instagram: 'https://instagram.com/einargudni',
   linkedin: 'https://www.linkedin.com/einargudni/',
