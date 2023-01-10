@@ -1,12 +1,12 @@
 const siteMetadata = {
   title: 'Home - Joon Jang',
   author: 'JiWoong (Joon) Jang',
-  headerTitle: 'Personal website',
-  description: 'A repository for research and some other things.',
+  headerTitle: 'My homepage',
+  description: 'My webpage for research, news, and other stuff.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://einargudni.com,',
-  siteRepo: 'https://github.com/einargudnig/personal-blog-v3',
+  siteUrl: 'joonbugs.github.io,',
+  siteRepo: 'https://github.com/joonbugs/personal-site',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/profile/cafe-shot-1.jpg',
   profile: '/static/images/profile/cafe-shot-1.jpg',
