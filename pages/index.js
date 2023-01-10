@@ -14,15 +14,17 @@ const MAX_DISPLAY = 2
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
-
-  return { props: { posts } }
+  const research = await getAllFilesFrontMatter('research')
+  const featured = research.filter((x) => x.tags.includes('featured'))
+  console.log(featured)
+  return { props: { posts, featured } }
 }
 
 // helper function for featured tag
 
 // helper function for news
 
-export default function Home({ posts }) {
+export default function Home({ posts, featured }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
@@ -139,8 +141,8 @@ export default function Home({ posts }) {
               </RoughNotation>
             </h2>
             <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-              {!posts.length && 'No posts found.'}
-              {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
+              {!featured.length && 'No posts found.'}
+              {featured.slice(0, MAX_DISPLAY).map((frontMatter) => {
                 const { slug, date, title, summary, tags } = frontMatter
                 return (
                   <li key={slug} className="py-5">

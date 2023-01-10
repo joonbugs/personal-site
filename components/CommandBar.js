@@ -98,9 +98,9 @@ export default function CommandBar(props) {
     },
     {
       id: 'gscholar',
-      name: 'Github',
-      shortcut: ['g'],
-      keywords: 'go-github',
+      name: 'Google Scholar',
+      shortcut: ['g', 's'],
+      keywords: 'go-gscholar',
       section: 'Follow',
       perform: () => window.open(siteMetadata.gscholar, '_blank'),
       icon: <i className="ri-google-line" style={iconStyle} />,
