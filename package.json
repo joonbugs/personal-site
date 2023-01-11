@@ -1,6 +1,6 @@
 {
-  "name": "einar-gudni-website",
-  "version": "1.4.0",
+  "name": "joon-jang-website",
+  "version": "2.0.3",
   "private": true,
   "scripts": {
     "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
