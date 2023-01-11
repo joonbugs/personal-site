@@ -8,6 +8,51 @@ import siteMetadata from '@/data/siteMetadata'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 
+const AUTHOR_SHORTNAME = 'J.W. Jang'
+
+// [paperlink, blogpost, demovideo, video, code, slides, talk]
+export function generateLinkString(linksArray) {
+  var retStringArr = []
+  var retString = ''
+  for (let i = 0; i < linksArray.length; i++) {
+    if (linksArray[i] != null) {
+      switch (i) {
+        case 0:
+          retString += '[<a href="' + linksArray[i] + '">PDF</a>]'
+          // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'paper'))
+          break
+        case 1:
+          retString += '[<a href="' + linksArray[i] + '">blog</a>]'
+          // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'blog'))
+          break
+        case 2:
+          retString += '[<a href="' + linksArray[i] + '">demo video</a>]'
+          // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'demo video'))
+          break
+        case 3:
+          retString += '[<a href="' + linksArray[i] + '">video</a>]'
+          // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'video'))
+          break
+        case 4:
+          retString += '[<a href="' + linksArray[i] + '">code</a>]'
+          // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'code'))
+          break
+        case 5:
+          retString += '[<a href="' + linksArray[i] + '">slides</a>]'
+          // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'slides'))
+          break
+        case 6:
+          retString += '[<a href="' + linksArray[i] + '">talk</a>]'
+          // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'talk'))
+          break
+      }
+      retString += '    '
+    }
+  }
+
+  return retString
+}
+
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/research/${fileName}`
 const discussUrl = (slug) =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(
@@ -17,7 +62,25 @@ const discussUrl = (slug) =>
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { slug, fileName, date, title, tags } = frontMatter
+  const {
+    slug,
+    date,
+    title,
+    writers,
+    venue,
+    summary,
+    tags,
+    heroimage,
+    heroimagealt,
+    paperlink,
+    blogpost,
+    demovideo,
+    video,
+    code,
+    slides,
+    talk,
+  } = frontMatter
+  const linksArray = [paperlink, blogpost, demovideo, video, code, slides, talk]
 
   return (
     <SectionContainer>
@@ -44,13 +107,20 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <div>
                 <PageTitle>{title}</PageTitle>
               </div>
+              <div className="text-center font-lg italic prose text-slate-600 max-w-none dark:text-slate-400 pt-2">
+                {venue}
+              </div>
+              <div className="text-center font-xl prose text-slate-600 max-w-none dark:text-slate-400 pt-2">
+                {/* paperlink, blogpost, demovideo, video, code, slides, talk */}
+                <div dangerouslySetInnerHTML={{ __html: generateLinkString(linksArray) }} />
+              </div>
             </div>
           </header>
           <div
             className="pb-8 divide-y divide-gray-200 xl:divide-y-0 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6"
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
-            <dl className="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-gray-200 xl:dark:border-gray-700">
+            {/* <dl className="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-gray-200 xl:dark:border-gray-700">
               <dt className="sr-only">Authors</dt>
               <dd>
                 <ul className="flex justify-center space-x-8 xl:block sm:space-x-12 xl:space-x-0 xl:space-y-8">
@@ -84,17 +154,44 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   ))}
                 </ul>
               </dd>
-            </dl>
+            </dl> */}
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
-              <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
+              <div className="prose dark:prose-dark max-w-none">
+                <div
+                  className="self-flex-center object-contain"
+                  style={{ position: 'relative', width: '100%', height: '390px' }}
+                >
+                  <Image
+                    src={heroimage}
+                    alt={heroimagealt}
+                    layout="fill"
+                    className="object-contain"
+                  ></Image>
+                </div>
+                <div className="flex text-lg flex-wrap prose text-slate-600 max-w-none dark:text-slate-400 pt-2">
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: writers
+                        .split(',')
+                        .map((x) =>
+                          x.includes(AUTHOR_SHORTNAME) || x.includes('JiWoong Jang')
+                            ? '<b>' + x + '</b>'
+                            : x
+                        )
+                        .reduce((acc, x) => (x === '' ? '' : acc + ', ' + x)),
+                    }}
+                  />
+                </div>
+                {children}
+              </div>
               <div className="pt-6 pb-6 text-sm text-slate-700 dark:text-slate-300">
                 {/* <Link href={discussUrl(slug)} rel="nofollow">
                   {'Discuss on Twitter'}
                 </Link>
                 {` • `} */}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
+                {/* <Link href={editUrl(fileName)}>{'View on GitHub'}</Link> */}
               </div>
-              <Comments frontMatter={frontMatter} />
+              {/* <Comments frontMatter={frontMatter} /> */}
             </div>
             <footer>
               <div className="text-sm font-medium leading-5 divide-gray-200 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2">

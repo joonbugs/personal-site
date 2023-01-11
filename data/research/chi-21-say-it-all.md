@@ -1,0 +1,22 @@
+---
+title: Say It All - Feedback for Improving Non-Visual Presentation Accessibility
+date: 2021-05-07
+writers: 'Y.H. Peng, J.W. Jang, J. Bigham, A. Pavel'
+venue: 'CHI 21 - Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems'
+tags: ['research', 'featured', 'paper', 'A11y', 'screen readers']
+draft: false
+heroimage: '/static/images/research/sayitall.gif'
+heroimagealt: 'a demo GIF Presentation A11y showing content being highligted in real-time'
+summary: Introducing Presentation A11y, a system that provides real-time and post-presentation accessibility feedback.
+paperlink: https://dl.acm.org/doi/10.1145/3411764.3445572
+blogpost:
+demovideo: https://www.youtube.com/watch?v=tBaSqMYP4yI
+video:
+code:
+talk:
+slides: https://sayitall.github.io/slides/
+---
+
+## Abstract
+
+Presenters commonly use slides as visual aids for informative talks. When presenters fail to verbally describe the content on their slides, blind and visually impaired audience members lose access to necessary content, making the presentation difficult to follow. Our analysis of 90 presentation videos revealed that 72% of 610 visual elements (e.g., images, text) were insufficiently described. To help presenters create accessible presentations, we introduce Presentation A11y, a system that provides real-time and post-presentation accessibility feedback. Our system analyzes visual elements on the slide and the transcript of the verbal presentation to provide element-level feedback on what visual content needs to be further described or even removed. Presenters using our system with their own slide-based presentations described more of the content on their slides, and identified 3.26 times more accessibility problems to fix after the talk than when using a traditional slide-based presentation interface. Integrating accessibility feedback into content creation tools will improve the accessibility of informational content for all.

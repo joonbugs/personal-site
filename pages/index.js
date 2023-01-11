@@ -32,35 +32,35 @@ export function generateLinkString(linksArray) {
     if (linksArray[i] != null) {
       switch (i) {
         case 0:
-          retString += '[<a href=&quot;' + linksArray[i] + '&quot;>paper</a>]'
+          retString += '[<a href="' + linksArray[i] + '">PDF</a>]'
           // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'paper'))
           break
         case 1:
-          retString += '[<a href=&quot;' + linksArray[i] + '&quot;>blog</a>]'
+          retString += '[<a href="' + linksArray[i] + '">blog</a>]'
           // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'blog'))
           break
         case 2:
-          retString += '[<a href=&quot;' + linksArray[i] + '&quot;>demo video</a>]'
+          retString += '[<a href="' + linksArray[i] + '">demo video</a>]'
           // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'demo video'))
           break
         case 3:
-          retString += '[<a href=&quot;' + linksArray[i] + '&quot;>video</a>]'
+          retString += '[<a href="' + linksArray[i] + '">video</a>]'
           // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'video'))
           break
         case 4:
-          retString += '[<a href=&quot;' + linksArray[i] + '&quot;>code</a>]'
+          retString += '[<a href="' + linksArray[i] + '">code</a>]'
           // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'code'))
           break
         case 5:
-          retString += '[<a href=&quot;' + linksArray[i] + '&quot;>slides</a>]'
+          retString += '[<a href="' + linksArray[i] + '">slides</a>]'
           // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'slides'))
           break
         case 6:
-          retString += '[<a href=&quot;' + linksArray[i] + '&quot;>talk</a>]'
+          retString += '[<a href="' + linksArray[i] + '">talk</a>]'
           // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'talk'))
           break
       }
-      retString += '   '
+      retString += '    '
     }
   }
 
@@ -192,15 +192,19 @@ export default function Home({ posts, featured }) {
       {/* research stuff here */}
       <div className="featuredResearch pt-4 space-y-2 pb-4">
         <div className="pt-4">
-          <h2
-            href="/research"
-            className="text-2xl font-semibold text-slate-800 dark:text-slate-100"
-          >
-            <RoughNotation type="box" show={true} color="#fff176" animationDuration={1}>
-              {' '}
-              Featured Research{'  '}
-            </RoughNotation>
-          </h2>
+          <Link href="/research">
+            {' '}
+            <h2
+              href="/research"
+              className="text-2xl font-semibold text-slate-800 dark:text-slate-100"
+            >
+              <RoughNotation type="box" show={true} color="#fff176" animationDuration={1}>
+                {' '}
+                Featured Research{'  '}
+              </RoughNotation>
+            </h2>
+          </Link>
+
           <ul className="divide-y divide-gray-200 dark:divide-gray-700">
             {!featured.length && 'No posts found.'}
             {featured.slice(0, MAX_FEATURED_DISPLAY).map((frontMatter) => {
@@ -227,17 +231,20 @@ export default function Home({ posts, featured }) {
                 <li key={slug} className="py-5">
                   <article>
                     <div className="items-left space-y-4 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline xl:-space-y-6">
-                      <div className="xl:col-span-1 self-center">
+                      <div
+                        className="flex self-center"
+                        style={{ position: 'relative', height: '230px', width: '80%' }}
+                      >
                         <Link href={`/research/${slug}`} className="place-content-center">
                           <Image
-                            src="/static/images/profile/conf-volunteering.jpg"
+                            src={heroimage}
                             alt={heroimagealt}
-                            height="180%"
-                            width="210%"
+                            layout="fill"
+                            className="object-contain"
                           ></Image>
                         </Link>
                       </div>
-                      <div className="mt-3 xl:col-span-3">
+                      <div className="xl:col-span-3">
                         <div className="">
                           <h3 className="justTitle text-2xl font-bold tracking-tight pb-2 mt-6 leading-10">
                             <Link
@@ -275,6 +282,9 @@ export default function Home({ posts, featured }) {
                         </div>
                         <div className="flex flex-wrap font-lg italic prose text-slate-600 max-w-none dark:text-slate-400 pb-6">
                           {venue}
+                        </div>
+                        <div className="flex flex-wrap font-m prose text-slate-600 max-w-none dark:text-slate-400 pb-6">
+                          {summary}
                         </div>
                         <div className="flex flex-wrap font-xl prose text-slate-600 max-w-none dark:text-slate-400 pb-6">
                           {/* paperlink, blogpost, demovideo, video, code, slides, talk */}
@@ -314,12 +324,15 @@ export default function Home({ posts, featured }) {
       {/* blog stuff here */}
       <div className="blogPosts pt-4 space-y-2 pb-4">
         <div className="pt-4">
-          <h2 href="/blog" className="text-2xl font-semibold text-slate-800 dark:text-slate-100">
-            <RoughNotation type="box" show={true} color="#BEE5B0" animationDuration={1}>
-              {' '}
-              Blog Posts{' '}
-            </RoughNotation>
-          </h2>
+          <Link href="/blog">
+            {' '}
+            <h2 href="/blog" className="text-2xl font-semibold text-slate-800 dark:text-slate-100">
+              <RoughNotation type="box" show={true} color="#BEE5B0" animationDuration={1}>
+                {' '}
+                Blog Posts{' '}
+              </RoughNotation>
+            </h2>
+          </Link>
           <ul className="divide-y divide-gray-200 dark:divide-gray-700">
             {!posts.length && 'No posts found.'}
             {posts.slice(0, MAX_BLOG_DISPLAY).map((frontMatter) => {
