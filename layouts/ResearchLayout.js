@@ -173,7 +173,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     className="object-contain"
                   ></Image>
                 </div>
-                <div className="flex text-lg flex-wrap prose text-slate-600 max-w-none dark:text-slate-400 pt-2">
+                <div className="flex text-lg flex-wrap prose text-slate-800 max-w-none dark:text-slate-200 pt-2">
                   <div
                     dangerouslySetInnerHTML={{
                       __html: writers

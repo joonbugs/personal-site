@@ -198,7 +198,7 @@ export default function ResearchListLayout({ posts, title, initialDisplayPosts =
                             <Tag key={tag} text={tag} />
                           ))}
                       </div>
-                      <div className="flex text-lg flex-wrap prose text-slate-600 max-w-none dark:text-slate-400 pb-2 pt-1">
+                      <div className="flex text-lg flex-wrap prose dark:prose-dark max-w-none pb-2 pt-1 text-slate-800 dark:text-slate-100">
                         <div
                           dangerouslySetInnerHTML={{
                             __html: writers
@@ -215,7 +215,7 @@ export default function ResearchListLayout({ posts, title, initialDisplayPosts =
                       <div className="flex flex-wrap font-lg italic prose text-slate-600 max-w-none dark:text-slate-400 pb-6">
                         {venue}
                       </div>
-                      <div className="flex flex-wrap font-xl prose text-slate-600 max-w-none dark:text-slate-400 pb-6">
+                      <div className="flex flex-wrap font-xl prose text-slate-700 max-w-none dark:text-slate-300 pb-6">
                         {/* paperlink, blogpost, demovideo, video, code, slides, talk */}
                         <div dangerouslySetInnerHTML={{ __html: generateLinkString(linksArray) }} />
                       </div>
