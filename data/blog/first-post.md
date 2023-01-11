@@ -14,4 +14,4 @@ Or in other words the availabilities of templates, which when you create a websi
 
 So I'm settling on this template for now, which seems to be decently navigable with VoiceOver, but fingers crossed that there isn't some fly in the ointment further down the line.
 
-Way too nerdy deets - built on Tailwind CSS 3.0 + Next 3.0 - still deciding where to host all this for now as I type this.
+Way too nerdy deets - built on Tailwind CSS 3.0 + NextJS 3.0 - still deciding where to host all this for now as I type this.

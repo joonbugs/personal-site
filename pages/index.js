@@ -59,6 +59,10 @@ export function generateLinkString(linksArray) {
           retString += '[<a href="' + linksArray[i] + '">talk</a>]'
           // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'talk'))
           break
+        case 7:
+          retString += '[<a href="' + linksArray[i] + '">website</a>]'
+          // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'talk'))
+          break
       }
       retString += '    '
     }
@@ -225,8 +229,18 @@ export default function Home({ posts, featured }) {
                 code,
                 slides,
                 talk,
+                website,
               } = frontMatter
-              const linksArray = [paperlink, blogpost, demovideo, video, code, slides, talk]
+              const linksArray = [
+                paperlink,
+                blogpost,
+                demovideo,
+                video,
+                code,
+                slides,
+                talk,
+                website,
+              ]
               return (
                 <li key={slug} className="py-5">
                   <article>

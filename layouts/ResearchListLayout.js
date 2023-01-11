@@ -43,6 +43,10 @@ export function generateLinkString(linksArray) {
           retString += '[<a href="' + linksArray[i] + '">talk</a>]'
           // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'talk'))
           break
+        case 7:
+          retString += '[<a href="' + linksArray[i] + '">website</a>]'
+          // retStringArr.push(React.createElement('a', { href: linksArray[i] }, 'talk'))
+          break
       }
       retString += '    '
     }
@@ -123,8 +127,9 @@ export default function ResearchListLayout({ posts, title, initialDisplayPosts =
               code,
               slides,
               talk,
+              website,
             } = frontMatter
-            const linksArray = [paperlink, blogpost, demovideo, video, code, slides, talk]
+            const linksArray = [paperlink, blogpost, demovideo, video, code, slides, talk, website]
             return (
               // <li key={slug} className="py-4">
               //   <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
