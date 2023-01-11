@@ -86,8 +86,8 @@ export default function Home({ posts, featured }) {
             <div className="headingtext">
               <h1 className="text-2xl font-bold tracking-tight leading-normal text-slate-900 dark:text-slate-100 sm:text-4xl sm:leading-normal md:text-5xl md:leading-normal">
                 Hi 👋 - I'm{' '}
-                <span className="text-primary-color dark:text-primary-color-dark">Joon</span>, a researcher
-                  focused on making the world more{' '}
+                <span className="text-primary-color dark:text-primary-color-dark">Joon</span>, a
+                researcher focused on making the world more{' '}
                 <RoughNotation
                   type="highlight"
                   show={true}
@@ -112,7 +112,10 @@ export default function Home({ posts, featured }) {
             </div>
           </div>
           {/* flavor text */}
-          <p className="text-lg leading-7 text-slate-600 dark:text-slate-300"> Ph.D. Student @ Carnegie Mellon University HCII </p>
+          <p className="text-lg leading-7 text-slate-600 dark:text-slate-300">
+            {' '}
+            Ph.D. Student @ Carnegie Mellon University's Human-Computer Interaction Institute{' '}
+          </p>
           {/* <p className="text-lg leading-7 text-slate-600 dark:text-slate-300">
             This is a home base for{' '}
             <RoughNotation
