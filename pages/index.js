@@ -114,7 +114,7 @@ export default function Home({ posts, featured }) {
           {/* flavor text */}
           <p className="text-lg leading-7 text-slate-600 dark:text-slate-300">
             {' '}
-            Ph.D. Student @ Carnegie Mellon University's Human-Computer Interaction Institute{' '}
+            Ph.D. Student @ Carnegie Mellon University, Human-Computer Interaction Institute{' '}
           </p>
           {/* <p className="text-lg leading-7 text-slate-600 dark:text-slate-300">
             This is a home base for{' '}
@@ -160,7 +160,7 @@ export default function Home({ posts, featured }) {
           </div>
           <br />
           {/* action command bar */}
-          <div className="flex justify-center w-full">
+          <div className="flex justify-center w-full" aria-hidden="true">
             <div className="justify-center mt-2">
               <ShortcutHome />
             </div>
