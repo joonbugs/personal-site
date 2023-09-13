@@ -1,7 +1,7 @@
 ---
 name: JiWoong Jang (장지웅)
 koreanname: (I usually go by Joon)
-avatar: '/static/images/profile/headshot_square_web.jpg'
+avatar: '/static/images/profile/alt-profile.jpg'
 
 occupation: research in A11y & HCI
 company: phd student @ CMU HCII
