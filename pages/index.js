@@ -117,11 +117,10 @@ export default function Home({ posts, featured }) {
             Ph.D. Student @ Carnegie Mellon University, Human-Computer Interaction Institute{' '}
           </p>
           <p className="text-m leading-7 text-slate-600 dark:text-slate-300">
-            I'm a first-year Ph.D. student at the Human Computer Interaction Institute at Carnegie
+            I'm a second-year Ph.D. student at the Human Computer Interaction Institute at Carnegie
             Mellon University's School of Computer Science. I'm advised by Patrick Carrington and
-            Andrew Begel and currently am a member of AXLE Lab and the VariAbility Lab. I focus on
-            research exploring the emergent interactions between AI-based capabilities and end-users
-            in assistive technology contexts.
+            Andrew Begel and currently am a member of the AXLE Lab and VariAbility Lab. I focus on
+            research aimed at reducing stigma and increasing adoption of AI-equipped assistive tehcnology by making them more socially acceptable.
           </p>
           {/* <p className="text-lg leading-7 text-slate-600 dark:text-slate-300">
             This is a home base for{' '}

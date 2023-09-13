@@ -5,10 +5,10 @@ const siteMetadata = {
   description: 'A webpage for research and some other things',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://einargudni.com,', // TODO
+  siteUrl: 'https://joonbugs.me,', // TODO
   siteRepo: 'https://github.com/joonbugs/personal-site',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/profile/cafe-shot-1.jpg',
+  image: '/static/images/profile/default-profile.jpg',
   socialBanner: '/static/images/twittercard.png',
   email: 'jiwoongj@cs.cmu.edu',
   gscholar: 'https://scholar.google.com/citations?user=JqGqynUAAAAJ&hl=en',
