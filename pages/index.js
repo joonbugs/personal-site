@@ -104,7 +104,7 @@ export default function Home({ posts, featured }) {
               <Image
                 src={siteMetadata.image}
                 alt="profile photo of Joon"
-                width="750%"
+                width="700%"
                 height="500%"
                 // className=" [clip-path:polygon(0%_0%,100%_0%,50%_100%,0%_50%)]"
                 className="rounded-full"
