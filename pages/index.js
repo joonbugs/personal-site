@@ -117,11 +117,12 @@ export default function Home({ posts, featured }) {
             Ph.D. Student @ Carnegie Mellon University, Human-Computer Interaction Institute{' '}
           </p>
           <p className="text-m leading-7 text-slate-600 dark:text-slate-300">
-            I'm a second-year Ph.D. student at the Human Computer Interaction Institute at Carnegie
-            Mellon University's School of Computer Science. I'm advised by Patrick Carrington and
-            Andrew Begel and currently am a member of the AXLE Lab and VariAbility Lab. I focus on
-            research aimed at reducing stigma and increasing adoption of AI-equipped assistive
-            tehcnology by making them more socially acceptable.
+            I'm a second-year Ph.D. student at Carnegie Mellon University's School of Computer
+            Science, advised by <a href="https://www.patrickcarrington.com">Patrick Carrington</a>{' '}
+            and <a href="https://andrewbegel.com">Andrew Begel</a>. I focus on understanding,
+            designing, and building AI-equipped assistive technology (AT) and how such tools affect
+            and alter existing social dynamics in intro- and extra-spective ways -- tackling stigma,
+            user-assimilation, and the AT adoption/abandonment problem through my research.
           </p>
           {/* <p className="text-lg leading-7 text-slate-600 dark:text-slate-300">
             This is a home base for{' '}
