@@ -121,7 +121,7 @@ export default function Home({ posts, featured }) {
             Science, advised by <a href="https://www.patrickcarrington.com">Patrick Carrington</a>{' '}
             and <a href="https://andrewbegel.com">Andrew Begel</a>. I focus on understanding,
             designing, and building AI-equipped assistive technology (AT) and how such tools affect
-            and alter existing social dynamics in intro- and extra-spective ways -- tackling stigma,
+            and alter existing social dynamics in intro- and extra-spective ways – tackling stigma,
             user-assimilation, and the AT adoption/abandonment problem through my research.
           </p>
           {/* <p className="text-lg leading-7 text-slate-600 dark:text-slate-300">
