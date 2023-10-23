@@ -188,13 +188,13 @@ export default function Home({ posts, featured }) {
           {/* <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div> */}
           <ul className="col-span-3 leading-8 tracking-tight text-m pt-2 pb-2 prose dark:prose-dark">
             <li>
-              <strong>2023 Oct</strong> 🤠 College Autism Summit 23 @ Nashville - Presented a talk
+              <strong>2023 Oct</strong> - 🤠 College Autism Summit 23 @ Nashville - Presented a talk
               on autistic workers' use of LLMs for social advice.{' '}
               <i>(Please ask for a paper predraft if interested!)</i>
             </li>
             <li>
-              <strong>2023 Jul</strong> ⭐ ND at Work Workshop @ Seattle - Presented on ongoing work
-              and student-volunteered
+              <strong>2023 Jul</strong> - ⭐ ND at Work Workshop @ Seattle - Presented on ongoing
+              work and student-volunteered
             </li>
             <li>
               <strong>2023 Jan</strong> - 🌐 Overhauled this personal website for improved design
