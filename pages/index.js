@@ -188,25 +188,29 @@ export default function Home({ posts, featured }) {
           {/* <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div> */}
           <ul className="col-span-3 leading-8 tracking-tight text-m pt-2 pb-2 prose dark:prose-dark">
             <li>
+              <strong>2023 Oct</strong> - 🗽 ASSETS '23 @ NYC - Student volunteered and met tons of
+              friends in real-life!
+            </li>
+            <li>
               <strong>2023 Oct</strong> - 🤠 College Autism Summit 23 @ Nashville - Presented a talk
               on autistic workers' use of LLMs for social advice.{' '}
-              <i>(Please ask for a paper predraft if interested!)</i>
+              <i>(Please ask for a paper draft if interested!)</i>
             </li>
             <li>
               <strong>2023 Jul</strong> - ⭐ ND at Work Workshop @ Seattle - Presented on ongoing
               work and student-volunteered
             </li>
-            <li>
+            {/* <li>
               <strong>2023 Jan</strong> - 🌐 Overhauled this personal website for improved design
               and accessibility
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <strong>2022 Nov</strong> - 🎉 Joined the VariAbility Lab
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <strong>2022 Oct</strong> - 🇬🇷 ASSETS 22 @ Athens: shared a poster and participated as
               an SV
-            </li>
+            </li> */}
             {/* <li>
               <strong>2022 Sept</strong> - 🥳 Officially joined CMU HCII and the AXLE Lab as a Ph.D.
               Student
