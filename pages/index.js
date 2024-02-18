@@ -188,6 +188,14 @@ export default function Home({ posts, featured }) {
           {/* <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div> */}
           <ul className="col-span-3 leading-8 tracking-tight text-m pt-2 pb-2 prose dark:prose-dark">
             <li>
+              <strong>2024 Jan</strong> - 🎉 CHI '24 --{' '}
+              <i>
+                “It’s the only thing I can trust”: Envisioning Large Language Model Use by Autistic
+                Workers for Communication Assistance
+              </i>{' '}
+              Conditionally Accepted!
+            </li>
+            <li>
               <strong>2023 Oct</strong> - 🗽 ASSETS '23 @ NYC - Student volunteered and met tons of
               friends in real-life!
             </li>
