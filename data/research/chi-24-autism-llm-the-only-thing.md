@@ -1,14 +1,24 @@
 ---
-title: "It's the only thing I can trust - Envisioning Large Language Model Use by Autistic Workers for Communication Assistance"
+title: It's the only thing I can trust - Envisioning Large Language Model Use by Autistic Workers for Communication Assistance
 writers: 'J.W. Jang, S. Moharana, P. Carrington, A. Begel'
-venue: "CHI 24: Proceedings of the CHI Conference on Human Factors in Computing Systems"
-website:
+venue: 'CHI 24: Proceedings of the CHI Conference on Human Factors in Computing Systems'
 date: 2024-03-08
-tags: ['research', 'featured', 'paper', 'A11y', 'autism', 'large language models', 'human-ai interaction', 'workplace', 'social communication']
+tags:
+  [
+    'research',
+    'featured',
+    'paper',
+    'A11y',
+    'autism',
+    'large language models',
+    'human-ai interaction',
+    'workplace',
+    'social communication',
+  ]
 draft: false
 heroimage: '/static/images/research/autism_llm_chi_hero.png'
-heroimagealt: "A graphic displaying a participant asking the question: I'm about to go to a conference. How do I go about forming connections?, and two replies, one from a robot and one from a human are juxtaposed."
-summary: "A study understanding autistic workers' preferences for social advice from LLMs, and sociotechnical implications from findings that LLM advice was indeed preferred over a humans'."
+heroimagealt: 'A graphic displaying a participant asking the question: "How do I go about resolving conflicts with coworkers?", and two replies, one from a robot and one from a human are juxtaposed.'
+summary: A study understanding autistic workers' preferences for social advice from LLMs, and sociotechnical implications from findings that LLM advice was indeed preferred over a humans'.
 paperlink: https://arxiv.org/abs/2403.03297
 blogpost:
 demovideo:
@@ -16,9 +26,7 @@ video:
 code:
 talk:
 slides:
-date-created: 2024-03-08
 ---
-# chi-24-autism-llm-the-only-thing
 
 ## Abstract
 
