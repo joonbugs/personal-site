@@ -192,8 +192,13 @@ export default function Home({ posts, featured }) {
               <i>
                 “It’s the only thing I can trust”: Envisioning Large Language Model Use by Autistic
                 Workers for Communication Assistance
-              </i>{' '}
-              Conditionally Accepted!
+              </i>
+              {' -- '}
+              Conditionally Accepted!{' '}
+              <i>
+                (Please check out the <a href="https://arxiv.org/abs/2403.03297">draft on arXiv!</a>
+                )
+              </i>
             </li>
             <li>
               <strong>2023 Oct</strong> - 🗽 ASSETS '23 @ NYC - Student volunteered and met tons of
@@ -202,7 +207,6 @@ export default function Home({ posts, featured }) {
             <li>
               <strong>2023 Oct</strong> - 🤠 College Autism Summit 23 @ Nashville - Presented a talk
               on autistic workers' use of LLMs for social advice.{' '}
-              <i>(Please ask for a paper draft if interested!)</i>
             </li>
             <li>
               <strong>2023 Jul</strong> - ⭐ ND at Work Workshop @ Seattle - Presented on ongoing

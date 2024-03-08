@@ -3,7 +3,7 @@ title: Say It All - Feedback for Improving Non-Visual Presentation Accessibility
 date: 2021-05-07
 writers: 'Y.H. Peng, J.W. Jang, J. Bigham, A. Pavel'
 venue: 'CHI 21 - Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems'
-tags: ['research', 'featured', 'paper', 'A11y', 'screen readers']
+tags: ['research', 'paper', 'A11y', 'screen readers']
 draft: false
 heroimage: '/static/images/research/sayitall.gif'
 heroimagealt: 'a demo GIF Presentation A11y showing content being highligted in real-time'
