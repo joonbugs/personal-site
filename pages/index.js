@@ -117,8 +117,12 @@ export default function Home({ posts, featured }) {
             Ph.D. Student @ Carnegie Mellon University, Human-Computer Interaction Institute{' '}
           </p>
           <p className="text-m leading-7 text-slate-600 dark:text-slate-300">
+            <b>Here at CHI! Please reach out, would love to say hi!</b> 📧 jwjang@cmu.edu!
+            <br />
             I'm a second-year Ph.D. student at Carnegie Mellon University's School of Computer
-            Science, advised by <a href="https://www.patrickcarrington.com">Patrick Carrington</a>{' '}
+            Science, advised by <a href="https://www.patrickcarrington.com">
+              Patrick Carrington
+            </a>{' '}
             and <a href="https://andrewbegel.com">Andrew Begel</a>. I focus on understanding,
             designing, and building AI-equipped assistive technology (AT) and how such tools affect
             and alter existing social dynamics in intro- and extra-spective ways – tackling stigma,
