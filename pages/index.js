@@ -188,16 +188,20 @@ export default function Home({ posts, featured }) {
           {/* <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div> */}
           <ul className="col-span-3 leading-8 tracking-tight text-m pt-2 pb-2 prose dark:prose-dark">
             <li>
+              <strong>2024 May</strong> - 🌴 CHI '24 @ Honolulu -- If you're at CHI, please reach
+              out! Would love to meet familiar and new faces. Also, presenting my full paper{' '}
+              <b>Tuesday 2:30PM HST, Room 316B</b> -- please stop by for a thought-provoking talk!
+            </li>
+            <li>
               <strong>2024 Jan</strong> - 🎉 CHI '24 --{' '}
               <i>
                 “It’s the only thing I can trust”: Envisioning Large Language Model Use by Autistic
                 Workers for Communication Assistance
               </i>
-              {' -- '}
-              Conditionally Accepted!{' '}
+              {' -- '} Accepted!{' '}
               <i>
-                (Please check out the <a href="https://arxiv.org/abs/2403.03297">draft on arXiv!</a>
-                )
+                (Please check out the{' '}
+                <a href="https://dl.acm.org/doi/10.1145/3613904.3642894">full paper here!</a>)
               </i>
             </li>
             <li>
