@@ -117,13 +117,8 @@ export default function Home({ posts, featured }) {
             Ph.D. Student @ Carnegie Mellon University, Human-Computer Interaction Institute{' '}
           </p>
           <p className="text-m leading-7 text-slate-600 dark:text-slate-300">
-            <b>Here at CHI! Please reach out, would love to say hi!</b> <br />
-            📧 jwjang@cmu.edu
-            <br />
             I'm a second-year Ph.D. student at Carnegie Mellon University's School of Computer
-            Science, advised by <a href="https://www.patrickcarrington.com">
-              Patrick Carrington
-            </a>{' '}
+            Science, advised by <a href="https://www.patrickcarrington.com">Patrick Carrington</a>{' '}
             and <a href="https://andrewbegel.com">Andrew Begel</a>. I focus on understanding,
             designing, and building AI-equipped assistive technology (AT) and how such tools affect
             and alter existing social dynamics in intro- and extra-spective ways – tackling stigma,
@@ -193,9 +188,8 @@ export default function Home({ posts, featured }) {
           {/* <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div> */}
           <ul className="col-span-3 leading-8 tracking-tight text-m pt-2 pb-2 prose dark:prose-dark">
             <li>
-              <strong>2024 May</strong> - 🌴 CHI '24 @ Honolulu -- If you're at CHI, please reach
-              out! Would love to meet familiar and new faces. Also, presenting my full paper{' '}
-              <b>Tuesday 2:30PM HST, Room 316B</b> -- please stop by for a thought-provoking talk!
+              <strong>2024 May</strong> - 🌴 CHI '24 @ Honolulu -- Presenting a full paper and
+              participating in the <a href="https://heal-workshop.github.io">HEAL Workshop</a>
             </li>
             <li>
               <strong>2024 Jan</strong> - 🎉 CHI '24 --{' '}
