@@ -19,7 +19,7 @@ draft: false
 heroimage: '/static/images/research/autism_llm_chi_hero.png'
 heroimagealt: 'A graphic displaying a participant asking the question: "How do I go about resolving conflicts with coworkers?", and two replies, one from a robot and one from a human are juxtaposed.'
 summary: A study understanding autistic workers' preferences for social advice from LLMs, and sociotechnical implications from findings that LLM advice was indeed preferred over a humans'.
-paperlink: https://arxiv.org/abs/2403.03297
+paperlink: https://dl.acm.org/doi/10.1145/3613904.3642894
 blogpost:
 demovideo:
 video:
