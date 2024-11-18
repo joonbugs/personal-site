@@ -175,7 +175,7 @@ export default function Home({ posts, featured }) {
           {/* social icons */}
           <div className="flex mr-7 space-x-6 stroke center items-center">
             <a
-              className="text-m hover:text-blue-600 dark:hover:text-yellow-300"
+              className="text-m hover:text-primary-color dark:hover:text-primary-color-dark"
               href={siteMetadata.cv}
               size="8"
             >
