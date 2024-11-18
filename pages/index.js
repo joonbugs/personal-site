@@ -211,11 +211,11 @@ export default function Home({ posts, featured }) {
           <ul className="col-span-3 leading-8 tracking-tight text-m pt-2 pb-2 prose dark:prose-dark">
             <li>
               <strong>2024 Oct</strong> - 💼 Kennedy Krieger ND at Work '24 @ DC - Presenting on
-              autistic workers' use of LLMs for social and workplace communicaiton support
+              autistic workers' use of LLMs for social and workplace communication support.
             </li>
             <li>
               <strong>2024 Sep</strong> - 😎 Tapia '24 @ San Diego - 3rd time attending, 2nd time
-              presenting a talk
+              presenting!
             </li>
             <li>
               <strong>2024 May</strong> - 🌴 CHI '24 @ Honolulu -- Presenting a full paper and
