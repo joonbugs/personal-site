@@ -130,8 +130,8 @@ export default function Home({ posts, featured }) {
               type="highlight"
               show={true}
               color="#a8dbef"
-              // animationDelay={400}
-              // animationDuration={800}
+              animationDelay={0}
+              animationDuration={0}
             >
               <a href="https://drive.google.com/file/d/1ScP4vVQGR8_MSjnSxaY3Sq8BO024F1UY/view?usp=share_link">
                 here.
