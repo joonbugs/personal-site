@@ -126,9 +126,17 @@ export default function Home({ posts, featured }) {
           </p>
           <p className="text-m leading-7 text-slate-600 dark:text-slate-300">
             My CV can be found{' '}
-            <a href="https://drive.google.com/file/d/1ScP4vVQGR8_MSjnSxaY3Sq8BO024F1UY/view?usp=share_link">
-              here.
-            </a>
+            <RoughNotation
+              type="highlight"
+              show={true}
+              color="#3aafdc"
+              // animationDelay={400}
+              // animationDuration={800}
+            >
+              <a href="https://drive.google.com/file/d/1ScP4vVQGR8_MSjnSxaY3Sq8BO024F1UY/view?usp=share_link">
+                here.
+              </a>
+            </RoughNotation>
           </p>
           {/* <p className="text-lg leading-7 text-slate-600 dark:text-slate-300">
             This is a home base for{' '}
