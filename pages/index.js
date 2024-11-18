@@ -124,7 +124,7 @@ export default function Home({ posts, featured }) {
             existing social dynamics in intro- and extra-spective ways – tackling stigma,
             user-assimilation, and the AT adoption/abandonment problem through my research.
           </p>
-          <p className="text-m leading-7 text-slate-600 dark:text-slate-300">
+          {/* <p className="text-m leading-7 text-slate-600 dark:text-slate-300">
             My CV can be found
             <RoughNotation
               type="highlight"
@@ -138,7 +138,7 @@ export default function Home({ posts, featured }) {
                 here.{' '}
               </a>
             </RoughNotation>
-          </p>
+          </p> */}
           {/* <p className="text-lg leading-7 text-slate-600 dark:text-slate-300">
             This is a home base for{' '}
             <RoughNotation
@@ -173,11 +173,11 @@ export default function Home({ posts, featured }) {
           </p> */}
           <br />
           {/* social icons */}
-          <div className="flex mr-7 space-x-6 stroke center">
+          <div className="flex mr-7 space-x-6 stroke center items-center">
             <a
               className="text-m hover:text-blue-600 dark:hover:text-yellow-300"
               href={siteMetadata.cv}
-              size="6"
+              size="8"
             >
               CV
             </a>
