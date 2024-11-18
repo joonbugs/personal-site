@@ -125,7 +125,7 @@ export default function Home({ posts, featured }) {
             user-assimilation, and the AT adoption/abandonment problem through my research.
           </p>
           <p className="text-m leading-7 text-slate-600 dark:text-slate-300">
-            My CV can be found{' '}
+            My CV can be found
             <RoughNotation
               type="highlight"
               show={true}
@@ -134,7 +134,8 @@ export default function Home({ posts, featured }) {
               animationDuration={0}
             >
               <a href="https://drive.google.com/file/d/1ScP4vVQGR8_MSjnSxaY3Sq8BO024F1UY/view?usp=share_link">
-                here.
+                {' '}
+                here.{' '}
               </a>
             </RoughNotation>
           </p>
@@ -173,7 +174,11 @@ export default function Home({ posts, featured }) {
           <br />
           {/* social icons */}
           <div className="flex mr-7 space-x-6 stroke center">
-            <SocialIcon kind="cv" href={siteMetadata.cv} size="5" />
+            <b>
+              <a href={siteMetadata.cv} size="5">
+                CV
+              </a>
+            </b>
             <SocialIcon kind="github" href={siteMetadata.github} size="5" />
             <SocialIcon kind="gscholar" href={siteMetadata.gscholar} size="5" />
             <SocialIcon kind="mail" href={'mailto:' + siteMetadata.email} size="5" />
