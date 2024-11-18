@@ -117,12 +117,18 @@ export default function Home({ posts, featured }) {
             Ph.D. Student @ Carnegie Mellon University, Human-Computer Interaction Institute{' '}
           </p>
           <p className="text-m leading-7 text-slate-600 dark:text-slate-300">
-            I'm a second-year Ph.D. student at Carnegie Mellon University's School of Computer
-            Science, advised by <a href="https://www.patrickcarrington.com">Patrick Carrington</a>{' '}
-            and <a href="https://andrewbegel.com">Andrew Begel</a>. I focus on understanding,
-            designing, and building AI-equipped assistive technology (AT) and how such tools affect
-            and alter existing social dynamics in intro- and extra-spective ways – tackling stigma,
+            I'm a Ph.D. student at Carnegie Mellon University's School of Computer Science, advised
+            by <a href="https://www.patrickcarrington.com">Patrick Carrington</a> and{' '}
+            <a href="https://andrewbegel.com">Andrew Begel</a>. I focus on understanding, designing,
+            and building AI-equipped assistive technology (AT) and how such tools affect and alter
+            existing social dynamics in intro- and extra-spective ways – tackling stigma,
             user-assimilation, and the AT adoption/abandonment problem through my research.
+          </p>
+          <p className="text-m leading-7 text-slate-600 dark:text-slate-300">
+            My CV can be found{' '}
+            <a href="https://drive.google.com/file/d/1ScP4vVQGR8_MSjnSxaY3Sq8BO024F1UY/view?usp=share_link">
+              here.
+            </a>
           </p>
           {/* <p className="text-lg leading-7 text-slate-600 dark:text-slate-300">
             This is a home base for{' '}
@@ -188,6 +194,14 @@ export default function Home({ posts, featured }) {
           {/* <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div> */}
           <ul className="col-span-3 leading-8 tracking-tight text-m pt-2 pb-2 prose dark:prose-dark">
             <li>
+              <strong>2024 Oct</strong> 💼 - Kennedy Krieger ND at Work '24 @ DC - Presenting on
+              autistic workers' use of LLMs for social and workplace communicaiton support
+            </li>
+            <li>
+              <strong>2024 Sept</strong> 😎 - Tapia '24 @ San Diego - 3rd time attending, 2nd time
+              presenting a talk
+            </li>
+            <li>
               <strong>2024 May</strong> - 🌴 CHI '24 @ Honolulu -- Presenting a full paper and
               participating in the <a href="https://heal-workshop.github.io">HEAL Workshop</a>
             </li>
@@ -203,7 +217,7 @@ export default function Home({ posts, featured }) {
                 <a href="https://dl.acm.org/doi/10.1145/3613904.3642894">full paper here!</a>)
               </i>
             </li>
-            <li>
+            {/* <li>
               <strong>2023 Oct</strong> - 🗽 ASSETS '23 @ NYC - Student volunteered and met tons of
               friends in real-life!
             </li>
@@ -214,7 +228,7 @@ export default function Home({ posts, featured }) {
             <li>
               <strong>2023 Jul</strong> - ⭐ ND at Work Workshop @ Seattle - Presented on ongoing
               work and student-volunteered
-            </li>
+            </li> */}
             {/* <li>
               <strong>2023 Jan</strong> - 🌐 Overhauled this personal website for improved design
               and accessibility
