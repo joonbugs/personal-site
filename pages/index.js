@@ -129,7 +129,7 @@ export default function Home({ posts, featured }) {
             <RoughNotation
               type="highlight"
               show={true}
-              color="#3aafdc"
+              color="#a8dbef"
               // animationDelay={400}
               // animationDuration={800}
             >
@@ -176,7 +176,7 @@ export default function Home({ posts, featured }) {
             <SocialIcon kind="github" href={siteMetadata.github} size="5" />
             <SocialIcon kind="gscholar" href={siteMetadata.gscholar} size="5" />
             <SocialIcon kind="mail" href={'mailto:' + siteMetadata.email} size="5" />
-            {/* <SocialIcon kind="instagram" href={siteMetadata.instagram} size="5" /> */}
+            <SocialIcon kind="cv" href={siteMetadata.cv} size="5" />
             {/* <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="5" /> */}
             {/* <SocialIcon kind="twitter" href={siteMetadata.twitter} size="5" /> */}
           </div>
@@ -202,11 +202,11 @@ export default function Home({ posts, featured }) {
           {/* <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div> */}
           <ul className="col-span-3 leading-8 tracking-tight text-m pt-2 pb-2 prose dark:prose-dark">
             <li>
-              <strong>2024 Oct</strong> 💼 - Kennedy Krieger ND at Work '24 @ DC - Presenting on
+              <strong>2024 Oct</strong> - 💼 Kennedy Krieger ND at Work '24 @ DC - Presenting on
               autistic workers' use of LLMs for social and workplace communicaiton support
             </li>
             <li>
-              <strong>2024 Sept</strong> 😎 - Tapia '24 @ San Diego - 3rd time attending, 2nd time
+              <strong>2024 Sept</strong> - 😎 Tapia '24 @ San Diego - 3rd time attending, 2nd time
               presenting a talk
             </li>
             <li>

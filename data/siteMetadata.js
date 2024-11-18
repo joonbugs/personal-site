@@ -13,6 +13,7 @@ const siteMetadata = {
   email: 'jiwoongj@cs.cmu.edu',
   gscholar: 'https://scholar.google.com/citations?user=JqGqynUAAAAJ&hl=en',
   github: 'https://github.com/joonbugs', // mark p
+  cv: 'https://drive.google.com/file/d/1ScP4vVQGR8_MSjnSxaY3Sq8BO024F1UY/view?usp=share_link',
   twitter: 'https://twitter.com/einargudni',
   facebook: 'https://facebook.com',
   instagram: 'https://instagram.com/einargudni',
