@@ -176,7 +176,7 @@ export default function Home({ posts, featured }) {
           <div className="flex mr-7 space-x-6 stroke center">
             <b>
               <a
-                className="hover:text-blue-600 dark:hover:text-yellow-300"
+                className="text-m hover:text-blue-600 dark:hover:text-yellow-300"
                 href={siteMetadata.cv}
                 size="6"
               >
