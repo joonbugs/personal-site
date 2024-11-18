@@ -173,7 +173,7 @@ export default function Home({ posts, featured }) {
           <br />
           {/* social icons */}
           <div className="flex mr-7 space-x-6 stroke center">
-            <SocialIcon kind="external" href={siteMetadata.cv} size="5" />
+            <SocialIcon kind="cv" href={siteMetadata.cv} size="5" />
             <SocialIcon kind="github" href={siteMetadata.github} size="5" />
             <SocialIcon kind="gscholar" href={siteMetadata.gscholar} size="5" />
             <SocialIcon kind="mail" href={'mailto:' + siteMetadata.email} size="5" />
@@ -206,7 +206,7 @@ export default function Home({ posts, featured }) {
               autistic workers' use of LLMs for social and workplace communicaiton support
             </li>
             <li>
-              <strong>2024 Sept</strong> - 😎 Tapia '24 @ San Diego - 3rd time attending, 2nd time
+              <strong>2024 Sep</strong> - 😎 Tapia '24 @ San Diego - 3rd time attending, 2nd time
               presenting a talk
             </li>
             <li>
