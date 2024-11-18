@@ -10,7 +10,7 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/profile/default-profile.jpg',
   socialBanner: '/static/images/twittercard.png',
-  email: 'jiwoongj@cs.cmu.edu',
+  email: 'jwjang@cmu.edu',
   gscholar: 'https://scholar.google.com/citations?user=JqGqynUAAAAJ&hl=en',
   github: 'https://github.com/joonbugs', // mark p
   cv: 'https://drive.google.com/file/d/1ScP4vVQGR8_MSjnSxaY3Sq8BO024F1UY/view?usp=share_link',
