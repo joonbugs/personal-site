@@ -174,9 +174,6 @@ export default function Home({ posts, featured }) {
           <br />
           {/* social icons */}
           <div className="flex mr-7 space-x-6 stroke center">
-            <SocialIcon kind="github" href={siteMetadata.github} size="5" />
-            <SocialIcon kind="gscholar" href={siteMetadata.gscholar} size="5" />
-            <SocialIcon kind="mail" href={'mailto:' + siteMetadata.email} size="5" />
             <b>
               <a
                 className="hover:text-blue-600 dark:hover:text-yellow-300"
@@ -186,6 +183,9 @@ export default function Home({ posts, featured }) {
                 CV
               </a>
             </b>
+            <SocialIcon kind="github" href={siteMetadata.github} size="5" />
+            <SocialIcon kind="gscholar" href={siteMetadata.gscholar} size="5" />
+            <SocialIcon kind="mail" href={'mailto:' + siteMetadata.email} size="5" />
             {/* <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="5" /> */}
             {/* <SocialIcon kind="twitter" href={siteMetadata.twitter} size="5" /> */}
           </div>
