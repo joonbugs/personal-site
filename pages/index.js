@@ -210,18 +210,28 @@ export default function Home({ posts, featured }) {
           {/* <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div> */}
           <ul className="col-span-3 leading-8 tracking-tight text-m pt-2 pb-2 prose dark:prose-dark">
             <li>
+              <strong>2025 Apr </strong> - 🎉 3 papers accepted (1 to FSE `25, 2 to ASEE `25) on
+              ongoing work for the{' '}
+              <strong>NSF Project: Preparing Autistic Students for the AI Workforce</strong>. More
+              news soon!
+            </li>
+            <li>
+              <strong>2025 Mar </strong> - 👨‍🏫 SIGCSE `25 @ Pittsburgh - Presented on ongoing work
+              creating an AI course specifically for autistic community college students.
+            </li>
+            <li>
               <strong>2024 Oct</strong> - 💼 Kennedy Krieger ND at Work '24 @ DC - Presenting on
               autistic workers' use of LLMs for social and workplace communication support.
             </li>
-            <li>
+            {/* <li>
               <strong>2024 Sep</strong> - 😎 Tapia '24 @ San Diego - 3rd time attending, 2nd time
               presenting!
-            </li>
+            </li> */}
             <li>
               <strong>2024 May</strong> - 🌴 CHI '24 @ Honolulu -- Presenting a full paper and
               participating in the <a href="https://heal-workshop.github.io">HEAL Workshop</a>
             </li>
-            <li>
+            {/* <li>
               <strong>2024 Jan</strong> - 🎉 CHI '24 --{' '}
               <i>
                 “It’s the only thing I can trust”: Envisioning Large Language Model Use by Autistic
@@ -232,7 +242,7 @@ export default function Home({ posts, featured }) {
                 (Please check out the{' '}
                 <a href="https://dl.acm.org/doi/10.1145/3613904.3642894">full paper here!</a>)
               </i>
-            </li>
+            </li> */}
             {/* <li>
               <strong>2023 Oct</strong> - 🗽 ASSETS '23 @ NYC - Student volunteered and met tons of
               friends in real-life!
