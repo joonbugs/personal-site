@@ -185,7 +185,7 @@ export default function Home({ posts, featured }) {
             <SocialIcon kind="github" href={siteMetadata.github} size="5" />
             <SocialIcon kind="gscholar" href={siteMetadata.gscholar} size="5" />
             <SocialIcon kind="mail" href={'mailto:' + siteMetadata.email} size="5" />
-            {/* <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="5" /> */}
+            <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="5" />
             {/* <SocialIcon kind="twitter" href={siteMetadata.twitter} size="5" /> */}
           </div>
           <br />
