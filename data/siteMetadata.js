@@ -17,7 +17,7 @@ const siteMetadata = {
   twitter: 'https://twitter.com/einargudni',
   facebook: 'https://facebook.com',
   instagram: 'https://instagram.com/einargudni',
-  linkedin: 'https://www.linkedin.com/einargudni/',
+  linkedin: 'https://www.linkedin.com/in/joonbug/',
   locale: 'en-US',
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics

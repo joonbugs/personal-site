@@ -212,8 +212,8 @@ export default function Home({ posts, featured }) {
             <li>
               <strong>2025 Apr </strong> - 🎉 3 papers accepted (1 to FSE `25, 2 to ASEE `25) on
               ongoing work for the{' '}
-              <strong>NSF Project: Preparing Autistic Students for the AI Workforce</strong>. More
-              news soon!
+              <strong>NSF Grant Project: Preparing Autistic Students for the AI Workforce</strong>.{' '}
+              <i>More news soon!</i>
             </li>
             <li>
               <strong>2025 Mar </strong> - 👨‍🏫 SIGCSE `25 @ Pittsburgh - Presented on ongoing work
