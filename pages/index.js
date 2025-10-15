@@ -227,10 +227,10 @@ export default function Home({ posts, featured }) {
               <strong>2024 Sep</strong> - 😎 Tapia '24 @ San Diego - 3rd time attending, 2nd time
               presenting!
             </li> */}
-            <li>
+            {/* <li>
               <strong>2024 May</strong> - 🌴 CHI '24 @ Honolulu -- Presenting a full paper and
               participating in the <a href="https://heal-workshop.github.io">HEAL Workshop</a>
-            </li>
+            </li> */}
             {/* <li>
               <strong>2024 Jan</strong> - 🎉 CHI '24 --{' '}
               <i>
