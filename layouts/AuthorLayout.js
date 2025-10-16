@@ -93,37 +93,7 @@ export default function AuthorLayout({ children, frontMatter }) {
             {questionstext}
           </div>
         </div>
-        {/* <div className="mt-2"> */}
-        <div className="pb-2 space-y-2 md:space-y-5">
-          <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-3xl md:leading-14">
-            Curriculum Vitae
-          </h2>
-        </div>
-        <h3 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-2xl md:leading-14">
-          Education
-        </h3>
-        <h3 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-2xl md:leading-14">
-          Research and Work History
-        </h3>
-        <h3 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-2xl md:leading-14">
-          Service
-        </h3>
-        {/* <div className="pt-8 pb-8 max-w-none xl:col-span-2">
-            {experienceData.map((d) => (
-              <Experience
-                key={d.company}
-                title={d.title}
-                company={d.company}
-                location={d.location}
-                range={d.range}
-                url={d.url}
-                text1={d.text1}
-                text2={d.text2}
-                text3={d.text3}
-              />
-            ))}
-          </div> */}
-        {/* </div> */}
+
         <div className="mt-2">
           <div className="pb-2 space-y-2 md:space-y-5">
             <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-3xl md:leading-14">
