@@ -67,8 +67,8 @@ export default function AuthorLayout({ children, frontMatter }) {
               <SocialIcon kind="github" href={siteMetadata.github} size="5" />
               <SocialIcon kind="gscholar" href={siteMetadata.gscholar} size="5" />
               <SocialIcon kind="mail" href={'mailto:' + siteMetadata.email} size="5" />
-              {/* <SocialIcon kind="instagram" href={siteMetadata.instagram} size="5" />
               <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="5" />
+              {/* <SocialIcon kind="instagram" href={siteMetadata.instagram} size="5" />
               <SocialIcon kind="twitter" href={siteMetadata.twitter} size="5" /> */}
             </div>
             {/* </div> */}
@@ -96,15 +96,8 @@ export default function AuthorLayout({ children, frontMatter }) {
         {/* <div className="mt-2"> */}
         <div className="pb-2 space-y-2 md:space-y-5">
           <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-3xl md:leading-14">
-            Short Curriculum Vitae
+            Curriculum Vitae
           </h2>
-          <div className="text-lg prose dark:prose-dark max-w-none xl:col-span-2">
-            <i>(still under construction, sorry!)</i> A PDF form of my CV can be found{' '}
-            <a href="https://drive.google.com/file/d/1ScP4vVQGR8_MSjnSxaY3Sq8BO024F1UY/view?usp=share_link">
-              here
-            </a>
-            .
-          </div>
         </div>
         <h3 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-2xl md:leading-14">
           Education
@@ -272,7 +265,7 @@ export default function AuthorLayout({ children, frontMatter }) {
 
             {/* Service Section */}
             <h3 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-2xl md:leading-14 mt-8 mb-4">
-              Service
+              Teaching and Service
             </h3>
             <div className="prose dark:prose-dark max-w-none">
               <div className="mb-4">
