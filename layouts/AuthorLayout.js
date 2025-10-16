@@ -136,205 +136,199 @@ export default function AuthorLayout({ children, frontMatter }) {
             <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-3xl md:leading-14">
               Short Curriculum Vitae
             </h2>
-            <div className="text-lg prose dark:prose-dark max-w-none xl:col-span-2">
-              A PDF form of my CV can be found{' '}
-              <a href="https://drive.google.com/file/d/1ScP4vVQGR8_MSjnSxaY3Sq8BO024F1UY/view?usp=share_link">
-                here
-              </a>
-              .
+            {/* Education Section */}
+            <h3 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-2xl md:leading-14 mt-8 mb-4">
+              Education
+            </h3>
+            <div className="prose dark:prose-dark max-w-none">
+              <div className="mb-6">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="font-bold text-lg mb-1">
+                      Carnegie Mellon University - School of Computer Science
+                    </p>
+                    <p className="text-base mb-1">Ph.D. in Human-Computer Interaction</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      Advised by Patrick Carrington and Andrew Begel
+                    </p>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">08/2022 - current</p>
+                </div>
+              </div>
+              <div className="mb-6">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="font-bold text-lg mb-1">Carnegie Mellon University</p>
+                    <p className="text-base mb-1">B.S. in Artificial Intelligence, Minor in HCI</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      Phi Beta Kappa (2022) and Senior Leadership Recognition Award
+                    </p>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">05/2022</p>
+                </div>
+              </div>
             </div>
-          </div>
 
-          {/* Education Section */}
-          <h3 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-2xl md:leading-14 mt-8 mb-4">
-            Education
-          </h3>
-          <div className="prose dark:prose-dark max-w-none">
-            <div className="mb-6">
-              <div className="flex justify-between items-start">
-                <div>
-                  <p className="font-bold text-lg mb-1">
-                    Carnegie Mellon University - School of Computer Science
-                  </p>
-                  <p className="text-base mb-1">Ph.D. in Human-Computer Interaction</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Advised by Patrick Carrington and Andrew Begel
-                  </p>
+            {/* Research and Work History Section */}
+            <h3 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-2xl md:leading-14 mt-8 mb-4">
+              Research and Work History
+            </h3>
+            <div className="prose dark:prose-dark max-w-none">
+              <div className="mb-6">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="font-bold text-lg mb-1">
+                      Graduate Research Assistant - VariAbility Lab
+                    </p>
+                    <p className="text-base">Carnegie Mellon University with Dr. Andrew Begel</p>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">S2022 - Current</p>
                 </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">08/2022 - current</p>
+              </div>
+              <div className="mb-6">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="font-bold text-lg mb-1">Graduate Research Assistant - AXLE Lab</p>
+                    <p className="text-base">
+                      Carnegie Mellon University with Dr. Patrick Carrington
+                    </p>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">F2021 - Current</p>
+                </div>
+              </div>
+              <div className="mb-6">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="font-bold text-lg mb-1">
+                      Research Assistant - MIT Visualization Group
+                    </p>
+                    <p className="text-base">
+                      Massachusetts Institute of Technology - CSAIL with Dr. Arvind Satyanarayan
+                    </p>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Summer 2021</p>
+                </div>
+              </div>
+              <div className="mb-6">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="font-bold text-lg mb-1">REU Research Assistant</p>
+                    <p className="text-base">
+                      Carnegie Mellon University - HCII Summer Research Program with Dr. Vincent
+                      Aleven
+                    </p>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Summer 2020 - F2020</p>
+                </div>
+              </div>
+              <div className="mb-6">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="font-bold text-lg mb-1">Research Assistant - Big Lab</p>
+                    <p className="text-base">
+                      Carnegie Mellon University with Drs. Amy Pavel and Jeffrey P. Bigham
+                    </p>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">S2020 - F2020</p>
+                </div>
+              </div>
+              <div className="mb-6">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="font-bold text-lg mb-1">Web Backend / Frontend / Design Intern</p>
+                    <p className="text-base">
+                      CREATE Lab (EarthTime / AI & Humanity Archive) - Supervised by Dr. Illah
+                      Nourbakhsh
+                    </p>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Summer 2019</p>
+                </div>
+              </div>
+              <div className="mb-6">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="font-bold text-lg mb-1">
+                      Special Task Force (Advisory to the Minister on Accessible Technology)
+                    </p>
+                    <p className="text-base">
+                      Ministry of Health and Welfare - Republic of South Korea
+                    </p>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Jun 2016 - Jul 2018</p>
+                </div>
+              </div>
+              <div className="mb-6">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="font-bold text-lg mb-1">
+                      Team Lead / Social Worker for Deaf and Hard-of-Hearing Causes
+                    </p>
+                    <p className="text-base">Community Chest of Korea</p>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Mar 2013 - May 2016</p>
+                </div>
               </div>
             </div>
-            <div className="mb-6">
-              <div className="flex justify-between items-start">
-                <div>
-                  <p className="font-bold text-lg mb-1">Carnegie Mellon University</p>
-                  <p className="text-base mb-1">B.S. in Artificial Intelligence, Minor in HCI</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Phi Beta Kappa (2022) and Senior Leadership Recognition Award
-                  </p>
-                </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">05/2022</p>
-              </div>
-            </div>
-          </div>
 
-          {/* Research and Work History Section */}
-          <h3 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-2xl md:leading-14 mt-8 mb-4">
-            Research and Work History
-          </h3>
-          <div className="prose dark:prose-dark max-w-none">
-            <div className="mb-6">
-              <div className="flex justify-between items-start">
-                <div>
-                  <p className="font-bold text-lg mb-1">
-                    Graduate Research Assistant - VariAbility Lab
-                  </p>
-                  <p className="text-base">Carnegie Mellon University with Dr. Andrew Begel</p>
-                </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">S2022 - Current</p>
-              </div>
-            </div>
-            <div className="mb-6">
-              <div className="flex justify-between items-start">
-                <div>
-                  <p className="font-bold text-lg mb-1">Graduate Research Assistant - AXLE Lab</p>
+            {/* Service Section */}
+            <h3 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-2xl md:leading-14 mt-8 mb-4">
+              Service
+            </h3>
+            <div className="prose dark:prose-dark max-w-none">
+              <div className="mb-4">
+                <div className="flex justify-between items-start">
                   <p className="text-base">
-                    Carnegie Mellon University with Dr. Patrick Carrington
+                    Dean's Undergraduate Research Recruitment Working Group
                   </p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">F2022 - current</p>
                 </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">F2021 - Current</p>
               </div>
-            </div>
-            <div className="mb-6">
-              <div className="flex justify-between items-start">
-                <div>
-                  <p className="font-bold text-lg mb-1">
-                    Research Assistant - MIT Visualization Group
-                  </p>
-                  <p className="text-base">
-                    Massachusetts Institute of Technology - CSAIL with Dr. Arvind Satyanarayan
-                  </p>
+              <div className="mb-4">
+                <div className="flex justify-between items-start">
+                  <p className="text-base">SCS4Accessibility, co-Lead + co-Founder</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">F2021 - current</p>
                 </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Summer 2021</p>
               </div>
-            </div>
-            <div className="mb-6">
-              <div className="flex justify-between items-start">
-                <div>
-                  <p className="font-bold text-lg mb-1">REU Research Assistant</p>
-                  <p className="text-base">
-                    Carnegie Mellon University - HCII Summer Research Program with Dr. Vincent
-                    Aleven
-                  </p>
+              <div className="mb-4">
+                <div className="flex justify-between items-start">
+                  <p className="text-base">ABLE CMU (Disability Advocacy), Founding Member</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">F2019 - F2021</p>
                 </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Summer 2020 - F2020</p>
               </div>
-            </div>
-            <div className="mb-6">
-              <div className="flex justify-between items-start">
-                <div>
-                  <p className="font-bold text-lg mb-1">Research Assistant - Big Lab</p>
-                  <p className="text-base">
-                    Carnegie Mellon University with Drs. Amy Pavel and Jeffrey P. Bigham
-                  </p>
+              <div className="mb-4">
+                <div className="flex justify-between items-start">
+                  <p className="text-base">CMU Graduate Application Support Program</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">F2022, F2023, F2024</p>
                 </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">S2020 - F2020</p>
               </div>
-            </div>
-            <div className="mb-6">
-              <div className="flex justify-between items-start">
-                <div>
-                  <p className="font-bold text-lg mb-1">Web Backend / Frontend / Design Intern</p>
-                  <p className="text-base">
-                    CREATE Lab (EarthTime / AI & Humanity Archive) - Supervised by Dr. Illah
-                    Nourbakhsh
-                  </p>
+              <div className="mb-4">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="text-base font-semibold">Head Teaching Assistant</p>
+                    <p className="text-sm">
+                      05-431 / 05-631 (SSUI - Software Structures for User Interfaces)
+                    </p>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">F2023</p>
                 </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Summer 2019</p>
               </div>
-            </div>
-            <div className="mb-6">
-              <div className="flex justify-between items-start">
-                <div>
-                  <p className="font-bold text-lg mb-1">
-                    Special Task Force (Advisory to the Minister on Accessible Technology)
-                  </p>
-                  <p className="text-base">
-                    Ministry of Health and Welfare - Republic of South Korea
-                  </p>
+              <div className="mb-4">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="text-base font-semibold">Head Teaching Assistant</p>
+                    <p className="text-sm">05-499 / 05-899 (Accessibility)</p>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">F2021</p>
                 </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Jun 2016 - Jul 2018</p>
               </div>
-            </div>
-            <div className="mb-6">
-              <div className="flex justify-between items-start">
-                <div>
-                  <p className="font-bold text-lg mb-1">
-                    Team Lead / Social Worker for Deaf and Hard-of-Hearing Causes
-                  </p>
-                  <p className="text-base">Community Chest of Korea</p>
+              <div className="mb-4">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="text-base font-semibold">Teaching Assistant</p>
+                    <p className="text-sm">15-122 (Principles of Imperative Computation)</p>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">F2019, S2020</p>
                 </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Mar 2013 - May 2016</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Service Section */}
-          <h3 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-2xl md:leading-14 mt-8 mb-4">
-            Service
-          </h3>
-          <div className="prose dark:prose-dark max-w-none">
-            <div className="mb-4">
-              <div className="flex justify-between items-start">
-                <p className="text-base">Dean's Undergraduate Research Recruitment Working Group</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">F2022 - current</p>
-              </div>
-            </div>
-            <div className="mb-4">
-              <div className="flex justify-between items-start">
-                <p className="text-base">SCS4Accessibility, co-Lead + co-Founder</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">F2021 - current</p>
-              </div>
-            </div>
-            <div className="mb-4">
-              <div className="flex justify-between items-start">
-                <p className="text-base">ABLE CMU (Disability Advocacy), Founding Member</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">F2019 - F2021</p>
-              </div>
-            </div>
-            <div className="mb-4">
-              <div className="flex justify-between items-start">
-                <p className="text-base">CMU Graduate Application Support Program</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">F2022, F2023, F2024</p>
-              </div>
-            </div>
-            <div className="mb-4">
-              <div className="flex justify-between items-start">
-                <div>
-                  <p className="text-base font-semibold">Head Teaching Assistant</p>
-                  <p className="text-sm">
-                    05-431 / 05-631 (SSUI - Software Structures for User Interfaces)
-                  </p>
-                </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">F2023</p>
-              </div>
-            </div>
-            <div className="mb-4">
-              <div className="flex justify-between items-start">
-                <div>
-                  <p className="text-base font-semibold">Head Teaching Assistant</p>
-                  <p className="text-sm">05-499 / 05-899 (Accessibility)</p>
-                </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">F2021</p>
-              </div>
-            </div>
-            <div className="mb-4">
-              <div className="flex justify-between items-start">
-                <div>
-                  <p className="text-base font-semibold">Teaching Assistant</p>
-                  <p className="text-sm">15-122 (Principles of Imperative Computation)</p>
-                </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">F2019, S2020</p>
               </div>
             </div>
           </div>
